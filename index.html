@@ -4,22 +4,742 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Humaira</title>
-    <style>
-        .header {
-            padding: 60px;
-            text-align: center;
-            background: #1abc9c;
-            color: white;
-            font-size: 30px;
-        }
-    </style>
+    <title>Humaira Ahmed</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mainHomePage.css">
+    <link rel="stylesheet" href="SkillsPage.css">
+    <link rel="stylesheet" href="workExperince.css">
+    <script src="index.js"></script>
+    <script src="mainHomaPage.js"></script>
+    <script src="SkillsPage.js"></script>
+    <script src="workExperince.js"></script>
 </head>
+<style>
+.workExperince{
+    display: none;
+  }
+
+.SkillsLabelOnWorkExperincePage{
+    display: none;
+    position: fixed;
+    top: 47.3%;
+    margin-left: 8%;
+    text-align: center;
+    color: #797777;
+    font-size: 18px;
+    animation: fadeIn linear 2s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  }
+
+  .workExperinceInformation{
+    position: fixed;
+    top: 15%;
+    left: 38%;
+    text-align: center;
+    color: #C8C7C5;
+  }
+
+  .headingWorkExperince{
+    position: fixed;
+    top: 12%;
+    left: 45%;
+    margin-bottom: 4px ;
+    text-align: center;
+    color: #C8C7C5;
+
+  }
+
+  .awardsLable{
+    display: none;
+    position: fixed;
+    top: 47.3%;
+    margin-left: 85.2%;
+    text-align: center;
+    color: #797777;
+    font-size: 18px;
+    animation: fadeIn linear 2s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .NextAwards{
+    position: fixed;
+    top: 40%;
+    margin-left: 90%;
+    text-align: center;
+    color: #575555;
+    font-size: 60px;
+    font-family: monospace;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px rgba(255, 253, 253, 0.5); /* 50% white from bottom */
+  }
+
+  .vacWork2020{
+      position: block;
+  }
+
+  .LinkToVacWork2020{
+    position: block;
+
+  }
+
+  .VideoThumbNailVacWork2020{
+    position: fixed;
+    top: 30%;
+    left: 13%;
+    width: 200px;
+    height: 200px;
+  }
+    
+   .SkillsPage{
+    display: none;
+  }
+
+  .previousGoToMainPage{
+    position: fixed;
+    top: 40%;
+    margin-left: 5%;
+    text-align: center;
+    color: #575555;
+    font-size: 60px;
+    font-family: monospace;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px rgba(255, 253, 253, 0.5); /* 50% white from bottom */
+  }
+
+  .aboutMe{
+    display: none;
+    position: fixed;
+    top: 47.3%;
+    margin-left: 8%;
+    text-align: center;
+    color: #797777;
+    font-size: 18px;
+    animation: fadeIn linear 2s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  }
+
+  .NextExperince{
+    position: fixed;
+    top: 40%;
+    margin-left: 90%;
+    text-align: center;
+    color: #575555;
+    font-size: 60px;
+    font-family: monospace;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px rgba(255, 253, 253, 0.5); /* 50% white from bottom */
+  }
+
+  .experinceLable{
+    display: none;
+    position: fixed;
+    top: 47.3%;
+    margin-left: 81%;
+    text-align: center;
+    color: #797777;
+    font-size: 18px;
+    animation: fadeIn linear 2s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .Skills{
+    position: fixed;
+    top: 45%;
+    margin-left: 45%;
+    margin-right: 45%;
+    text-align: center;
+    color: #C8C7C5;
+  }
+    
+    .Introduction{
+    position: fixed;
+    top: 45%;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    color: #C8C7C5;
+  }
+
+  .SkillsLabel{
+    display: block;
+    position: fixed;
+    top: 47.3%;
+    margin-left: 86%;
+    text-align: center;
+    color: #797777;
+    font-size: 18px;
+    animation: fadeIn linear 2s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .NextSkills{
+    position: fixed;
+    top: 40%;
+    margin-left: 90%;
+    text-align: center;
+    color: #575555;
+    font-size: 60px;
+    font-family: monospace;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px rgba(255, 253, 253, 0.5); /* 50% white from bottom */
+  }
+
+  
+  .instagramImage{
+    display:block;
+    position: fixed;
+    top: 45%;
+    width: 3%;
+    height: auto;
+  }
+  
+  .instagramImageHover{
+    display:none;
+    position: fixed;
+    top: 45%;
+    width: 4%;
+    height: 6.2%;
+  }
+
+  
+
+.twitterImage{
+    display:block;
+    position: fixed;
+    top: 51.2%;
+    margin-top: 0px;
+    width: 3%;  
+    height: auto;
+  }
+  
+  .twitterImageHover{
+    display:none;
+    position: fixed;
+    top: 51.2%;
+    margin-top: 0px;
+    width: 4%;
+    height: 6.3%;
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+    
+    body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  background: #222;
+}
+
+body {
+  margin:0;
+  font-family:Arial;
+  background-color: #333;
+}
+
+* {
+  box-sizing: content-box;
+}
+.flip {
+  position: absolute;
+  width: 160px;
+  height: 48px;
+  perspective: 500px;
+  top: 50%;
+  margin: -24px 0 0 -80px;
+}
+.flip a {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.flip a .front,
+.flip a .back {
+  margin: 0;
+  width: 900px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 48px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  letter-spacing: 0.4em;
+}
+.flip a .front {
+  background-color: #333;
+  color: #fff;
+  transform: rotateY(0) translateZ(24px);
+}
+.flip a .back {
+  background-color: rgba(255,255,255,0);
+  color: rgba(34,34,34,0);
+  transform: rotateX(90deg) translateZ(24px);
+  overflow: hidden;
+}
+.flip a .back:after {
+  content: '';
+  position: absolute;
+  top: -32%;
+  
+  width: 120%;
+  height: 50%;
+  background: #222;
+  transform: rotate(8deg);
+  transition: all 0.5s ease;
+  transition-delay: 0.15s;
+}
+.flip a:hover {
+  transform: translateZ(-24px) rotateX(-90deg);
+}
+.flip a:hover .front {
+  background: #000;
+  transition: all 0.8s ease;
+}
+.flip a:hover .back {
+  color: #222;
+  transition: color 0.4s linear;
+  background: #fff;
+}
+.flip a:hover .back:after {
+  transform: rotate(6deg) translate(100px, -18px);
+}
+
+
+
+.easyNavigation{
+  position: fixed;
+  left: 95%;
+  top: 1%;
+  background-color: #333;
+  border: none;
+  color: #999797;
+  font-size: 30px;
+  transform: rotate(90deg);
+  text-decoration: none;
+}
+
+.meunOptionAbout{
+  display: block;
+  position: fixed;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: 25%;
+  width: 80%;
+  height: 10%;
+  background-color: #333;
+  color: #999797;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: none;
+}
+
+.meunOptionSkills{
+  display: block;
+  position: fixed;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: 35%;
+  width: 80%;
+  height: 10%;
+  background-color: #333;
+  color: #999797;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: none;
+}
+
+
+.meunOptionWorkExperince{
+  display: block;
+  position: fixed;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: 45%;
+  width: 80%;
+  height: 10%;
+  background-color: #333;
+  color: #999797;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: none;
+}
+
+.meunOptionContact{
+  display: block;
+  position: fixed;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: 55%;
+  width: 80%;
+  height: 10%;
+  background-color: #333;
+  color: #999797;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: none;
+}
+
+/* Styling the header */
+
+.topNavBar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topNavBar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+/* add class="active" */
+.active {
+  background-color: #225240;
+  color: white;
+}
+
+/* 
+    Button when the heading are chnaged into a drop down options. 
+    Only make it visiable when the screen width is smaller than a certain size.
+*/
+.topNavBar .icon {
+  display: none;
+}
+
+/* drop down option */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topNavBar a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* making the navigation bar responsive */
+@media screen and (max-width: 600px) {
+  .topNavBar a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topNavBar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topNavBar.responsive {position: relative;}
+  .topNavBar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topNavBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topNavBar.responsive .dropdown {float: none;}
+  .topNavBar.responsive .dropdown-content {position: relative;}
+  .topNavBar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
+.MenuOptions{
+  display: none;
+}
+
+
+</style>
 <body>
-    <div class="header">
-        <h1>Test header</h1>
-        <p>My supercool header</p>
-    </div>
+
+      <div class="topNavBar" id="myTopNavigationBar">
+        <button class="easyNavigation" id= "easyNavigation" onclick="displayMenuOptions()">|||</button>
+      </div>
+      
+      <div class="MenuOptions" id="MenuOptions">
+        <button class="meunOptionAbout">
+          <div class="flip">
+            <a href="https://dribbble.com/shots/2507318-start-rollover" target="_blank">
+              <div class="front">About</div>
+              <div class="back">About</div>
+            </a>
+          </div>
+        </button>
+        <button class="meunOptionSkills">
+          <div class="flip">
+            <a href="https://dribbble.com/shots/2507318-start-rollover" target="_blank">
+              <div class="front">Skills</div>
+              <div class="back">Skills</div>
+            </a>
+          </div>
+        </button>
+        <button class="meunOptionWorkExperince">
+          <div class="flip">
+            <a href="https://dribbble.com/shots/2507318-start-rollover" target="_blank">
+              <div class="front">Experince</div>
+              <div class="back">Experince</div>
+            </a>
+          </div>
+        </button>
+        <button class="meunOptionContact">
+          <div class="flip">
+            <a href="https://dribbble.com/shots/2507318-start-rollover" target="_blank">
+              <div class="front">Contact</div>
+              <div class="back">Contact</div>
+            </a>
+          </div>
+        </button>
+        
+      </div>
+
+      <!-- MAIN HOME PAGE -->
+      <div id="mainHomePage">
+        <div style="padding-left:16px" class="Introduction">
+          <h2 >Hello, my name is Humaira Ahmed</h2>
+          <p>I'm currently in my Third year at NWU, studying a BSc in Information technology.</p>
+        </div>
+
+        <div>
+          <h1 class="SkillsLabel" id="SkillsLabel">Skills</h1>
+          <h1 class="NextSkills" onmouseover="nextAboutMeHover()" onmouseout="nextAboutMeHoverRemoved()" onclick="ViewSkillsPage()"> > </h1>
+        </div>
+
+        <a href="https://www.instagram.com/humaira_.ahmed/" class="instagramLink" onmouseover="showInstagramHover()" onmouseout="showInstagramNormal()">
+          <img src="instagram.png" alt="instagramIcon" class="instagramImage" id = "instagramImage">
+          <img src="instagramHover.png" alt="instagramIconHover" class="instagramImageHover" id = "instagramImageHover">
+        </a>
+        <a href="https://twitter.com/_humairaahmed?t=Jn2hFuksBGZ4t1_6A3vV1g&s=09" class="twitterLink" onmouseover="showTwitterHover()" onmouseout="showTwitterNormal()">
+          <img src="twitter.png" alt="instagramIcon" class="twitterImage" id="twitterImage">
+          <img src="twitterHover.PNG" alt="twitterIconHover" class="twitterImageHover" id = "twitterImageHover">
+        </a>
+      </div>
+
+
+      <!-- SKILLS PAGE -->
+      <div class="SkillsPage" id="SkillsPage">
+        <div>
+          <h1 class="aboutMe" id="MainPage">About Me</h1>
+          <h1 class="previousGoToMainPage" onmouseover="previousAboutMeHover()" onmouseout="previousAboutMeHoverRemoved()" onclick="ViewMainHomePage()"> < </h1>
+        </div>
+
+        <div style="padding-left:16px" class="Skills">
+          <h2 >Skills page</h2>
+          <p>Skills paragraph</p>
+        </div>
+
+        <div>
+          <h1 class="experinceLable" id="experinceLable">Work Experince</h1>
+          <h1 class="NextExperince" onmouseover="nextExperinceHover()" onmouseout="nextExperinceRemoved()" onclick="ViewExperincePage()"> > </h1>
+        </div>     
+      </div>
+
+
+      <!-- WORK EXPERINCE PAGE -->
+      <div class="workExperince" id="workExperince">
+        <div>
+          <h1 class="SkillsLabelOnWorkExperincePage" id="SkillsLabelOnWorkExperincePage">Skills</h1>
+          <h1 class="previousGoToMainPage" onmouseover="previousSkillsHover()" onmouseout="previousSkillsRemoved()" onclick="ViewSkillsPerviousPage()"> < </h1>
+        </div>
+
+        <h2 class="headingWorkExperince" >WORK EXPERINCE</h2>
+        <div style="padding-left:16px" class="workExperinceInformation">
+          
+          <br>
+          <h6>_____________________________Click to view_____________________________</h6>
+        </div>
+
+        <div class="vacWork2020">
+          <a href="https://www.youtube.com/watch?v=5Dtx-Ej_4sU" class="LinkToVacWork2020">
+            <video controls poster="https://img.youtube.com/vi/5Dtx-Ej_4sU/sddefault.jpg" class="VideoThumbNailVacWork2020">
+           </video>
+         </a>
+        </div>
+        
+
+        <div>
+          <h1 class="awardsLable" id="awardsLable">Awards</h1>
+          <h1 class="NextAwards" onmouseover="nextAwardsHover()" onmouseout="nextAwardsRemoved()" onclick="ViewAwardsPage()"> > </h1>
+        </div>     
+      </div>
+
     
 </body>
+<script>
+function displayMenuOptions(){
+  document.getElementById("MenuOptions").style.display = "block";
+  document.getElementById("mainHomePage").style.display = "none";
+  document.getElementById("SkillsPage").style.display = "none";
+  document.getElementById("workExperince").style.display = "none";
+  document.getElementById("easyNavigation").innerHTML = "X";
+  document.getElementById("easyNavigation").style.transform = "rotate(180deg)";
+}
+
+
+
+// Function for clicking on the drop down button when the screen is too small
+function DropDownInNavBar() {
+  var x = document.getElementById("myTopNavigationBar");
+  if (x.className === "topNavBar") {
+    x.className += " responsive";
+  } else {
+    x.className = "topNavBar";
+  }
+}
+    
+    // Twitter and instagram icons
+function showInstagramHover(instagramImageHover){
+    document.getElementById("instagramImageHover").style.display = "block";
+    document.getElementById("instagramImage").style.display = "none";
+  }
+  
+  function showInstagramNormal(instagramImageHover){
+    document.getElementById("instagramImageHover").style.display = "none";
+    document.getElementById("instagramImage").style.display = "block";
+  }
+  
+  function showTwitterHover(instagramImageHover){
+    document.getElementById("twitterImageHover").style.display = "block";
+    document.getElementById("twitterImage").style.display = "none";
+  }
+  
+  function showTwitterNormal(instagramImageHover){
+    document.getElementById("twitterImageHover").style.display = "none";
+    document.getElementById("twitterImage").style.display = "block";
+  }
+
+
+  // Go to next page - SKILLS
+  function nextAboutMeHover(instagramImageHover){
+    document.getElementById("SkillsLabel").style.display = "block";
+  }
+  
+  function nextAboutMeHoverRemoved(instagramImageHover){
+    document.getElementById("SkillsLabel").style.display = "none";
+  }
+
+
+  //View skills page
+  function ViewSkillsPage()
+{
+  document.getElementById("mainHomePage").style.display = "none";
+  document.getElementById("SkillsPage").style.display = "block";
+}
+    
+    function ViewMainHomePage()
+{
+  document.getElementById("SkillsPage").style.display = "none";
+  document.getElementById("mainHomePage").style.display = "block";
+}
+
+function previousAboutMeHover(){
+    document.getElementById("MainPage").style.display = "block";
+  }
+  
+  function previousAboutMeHoverRemoved(){
+    document.getElementById("MainPage").style.display = "none";
+  }
+
+ // Go to next page - WORK EXPERINCE
+ function nextExperinceHover(instagramImageHover){
+  document.getElementById("experinceLable").style.display = "block";
+}
+
+function nextExperinceRemoved(instagramImageHover){
+  document.getElementById("experinceLable").style.display = "none";
+}
+
+function ViewExperincePage(){
+  document.getElementById("SkillsPage").style.display = "none";
+  document.getElementById("workExperince").style.display = "block";
+}
+    
+    // Go to next page - SKILLS
+function previousSkillsHover(instagramImageHover){
+    document.getElementById("SkillsLabelOnWorkExperincePage").style.display = "block";
+  }
+  
+  function previousSkillsRemoved(instagramImageHover){
+    document.getElementById("SkillsLabelOnWorkExperincePage").style.display = "none";
+  }
+
+  function ViewSkillsPerviousPage(){
+    document.getElementById("workExperince").style.display = "none";
+    document.getElementById("SkillsPage").style.display = "block";
+  }
+
+   // Go to next page - AWARDS
+ function nextAwardsHover(instagramImageHover){
+    document.getElementById("awardsLable").style.display = "block";
+  }
+  
+  function nextAwardsRemoved(instagramImageHover){
+    document.getElementById("awardsLable").style.display = "none";
+  }
+</script>
 </html>
