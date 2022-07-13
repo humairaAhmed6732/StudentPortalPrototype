@@ -1,7 +1,76 @@
-.header {
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-  font-size: 30px;
+.TopHeader{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 52px;
+    background: #6f327a;
+}
+.EfundiLogo{
+    position: relative;
+    width: 103px;
+    height: 54px;
+    left:0.6vw;
+    top:-1px;
+    background-size: 100px 36px;
+}
+.AlertIcon{
+    position: absolute;
+    right:210px;
+    top: 15px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.SocialAlerts{
+    position: absolute;
+    right:175px;
+    top: 15px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.LineSeperation{
+    position: absolute;
+    right:163px;
+    font-family: Calibri; 
+    border-right: 1px solid #ffffff;
+    height: 32px;
+    top: 9.5px;
+    width: 2px;
+    background-color: #6f327a; 
+}
+.SiteInfo{
+    position: absolute;
+    width: 70px;
+    height: 54px;
+    right:90px;
+    top:-1px;
+    background-size: 100px 36px; 
+}
+.User{
+    position: absolute;
+    right:45px;
+    top: 6px;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 100;
+}
+.UserInitials{
+    position: absolute;
+    right: 14px;
+    top: 13px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: Calibri;
+}
+.LineSeperation2{
+    position: absolute;
+    right:89px;
+    border-right: 1px solid #ffffff;
+    height: 32px;
+    top: 9.5px;
+    width: 2px;
+    background-color: #6f327a;
 }
