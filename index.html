@@ -162,8 +162,14 @@ function ClickCalender(){
     //Setting the dates on the top row in the calender 
     var dayNumber = new Date().getDay();
     var startDate = new Date().getDate() - dayNumber+1;
+    const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+    const d = new Date();
+    let monthName = month[d.getMonth()];
     var date = startDate;
     document.getElementById("Monday").innerHTML  = "Monday" +"<label class='dateNumber'>"+ date + "</label>";
+    var StringDateForTheWeek = "Monday " + date + " " + monthName + " " + new Date().getFullYear() + " - ";
+    
     date += 1;
     document.getElementById("Tuesday").innerHTML  = "Tuesday" +"<label class='dateNumber'>"+ date + "</label>";
     date += 1;
@@ -176,6 +182,9 @@ function ClickCalender(){
     document.getElementById("Saturday").innerHTML  = "Saturday" +"<label class='dateNumber'>"+ date + "</label>";
     date += 1;
     document.getElementById("Sunday").innerHTML  = "Sunday" +"<label class='dateNumber'>"+ date + "</label>";
+    const d2 = new Date();
+    let monthName2 = month[d2.getMonth()];
+    document.getElementById("dateForCalender").innerHTML = StringDateForTheWeek + "Sunday " + date + " " + monthName2 + " " + new Date().getFullYear() ;
 
 
     // Higlight the day of the week on the schedule    
@@ -2266,7 +2275,7 @@ a[href] {
               </select>
         </div>
         <div class="dayAndDate">
-            <label class="dateForCalender">Sunday 24 July 2022 - Saturday 30 July 2022 SAST</label>
+            <label class="dateForCalender" id="dateForCalender">Sunday 24 July 2022 - Saturday 30 July 2022 SAST</label>
         </div>
         <div class="ChangeCalenderDate">
             <table>
