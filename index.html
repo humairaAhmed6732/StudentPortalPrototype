@@ -5,22 +5,3345 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eFundi: Home: Overview</title>
-    <link rel="stylesheet" type="text/css" href="https://humairaAhmed6732.github.io/index.css">
+    <link rel="stylesheet" href="StudentPortal.css">
+    <link rel="stylesheet" href="SitesTabs.css">
+    <link rel="stylesheet" href="Navigation.css">
+    <link rel="stylesheet" href="Calender.css">
+    <link rel="stylesheet" href="StudentCounseling.css">
+    <link rel="stylesheet" href="Results.css">
+    <link rel="stylesheet" href="AcademicInformation.css">
     <script src="https://kit.fontawesome.com/5907786841.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <style>
+        .infoAcademicInfoTabs{
+    background: #fff;
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+    left:5px;
+    width: 1310px;
+    top:15px;
+    margin-top: none;
+    padding: none;
+}
+.Division{
+    position: absolute;
+    left:15px;
+    line-height: 2px;
+    border-top: 1px solid #cccccc;
+    height:2px;
+    width:1275px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+.AcademicInfoTabs{
+    position: relative;
+    left: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.AcademicInfoTabs:hover{
+    color: #063d6c;
+    font-weight: 700;
+}
+.AcademicInfoTabs1{
+    position: relative;
+    left: 20px;
+    font-size: 14px;
+    margin-top: 0px;
+}
+.AcademicInfoTabs1:hover{
+    color: #063d6c;
+    font-weight: 700;
+}
+.ApplicationInformationTableYear4{
+    position: relative;
+    left: 20px;
+    display: none;
+    font-family: "Open Sans",sans-serif;
+}
+.ApplicationInformationTableYear1{
+    position: relative;
+    left: 20px;
+    display: none;
+    font-family: "Open Sans",sans-serif;
+}
+.ApplicationYear4{
+    position: relative;
+    left: 25px;
+    font-size: 13px;
+    color: #5e5e5e;
+    display: none;
+}
+.ApplicationYear4:hover{
+    color: #063d6c;
+    font-weight: 700;
+}
+.ApplicationYear1{
+    position: relative;
+    left: 25px;
+    font-size: 13px;
+    color: #5e5e5e;
+    display: none;
+}
+.ApplicationYear1:hover{
+    color: #063d6c;
+    font-weight: 700;
+}
+.ApplicationInformationHeadings{
+    background-color: #337ab7;
+    color: white;
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: 550;
+    border: 0px solid white;
+    text-align: left;
+    height: 35px;
+    padding: 10px 10px 0px 10px;
+    width: 200px;
+}
+.ApplicationInformationData{
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    border: 1px solid rgb(172, 172, 172);
+    text-align: left;
+    height: 20px;
+    padding: 0px 10px 0px 10px;
+    margin: none;
+    color: rgb(80, 80, 80);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+    max-width: 350px;
+}
+.ApplicationDownload{
+    position: relative;
+    top:0px;
+    left:1245px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    height: 25px;
+    color: #063d6c;
+    display: none;
+}
+.ApplicationDownload:hover{
+    color: rgb(81, 81, 81);
+}
+
+/*Registration information*/
+.registrationYear{
+    position: relative;
+    left: 25px;
+    font-size: 13px;
+    color: #5e5e5e;
+    display: none;  
+}
+.registrationYear:hover{
+    color: #063d6c;
+    font-weight: 700;
+}
+.RegistrationTable{
+    position: relative;
+    left: 20px;
+    display: none;
+    font-family: "Open Sans",sans-serif;
+}
+.RegistrationHeadings{
+    background-color: #337ab7;
+    color: white;
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: 550;
+    border: 0px solid white;
+    text-align: left;
+    height: 35px;
+    padding: 10px 10px 0px 10px;
+    width: 200px;
+}
+.RegistrationData{
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    border: 1px solid rgb(172, 172, 172);
+    text-align: left;
+    height: 20px;
+    padding: 0px 10px 0px 10px;
+    margin: none;
+    color: rgb(80, 80, 80);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+    max-width: 350px;
+}
+.RegistrationDownload{
+    position: relative;
+    top:0px;
+    left:1245px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    height: 25px;
+    color: #063d6c;
+    display: none;
+}
+.RegistrationDownload:hover{
+    color: rgb(81, 81, 81);
+}
+
+/*Timetables*/
+.Timetable{
+    position: relative;
+    left: 25px;
+    font-size: 13px;
+    color: #5e5e5e;
+    display: none;  
+}
+.Timetable:hover{
+    color: #063d6c;
+    font-weight: 700;
+}
+/*Timetables*/
+.ExamTimeTable{
+    position: relative;
+    left: 20px;
+    display: none;
+    font-family: "Open Sans",sans-serif;
+    width: 1200px;
+}
+.ExamHeadings{
+    background-color: #337ab7;
+    color: white;
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: 550;
+    border: 0px solid white;
+    text-align: left;
+    height: 35px;
+    padding: 10px 10px 0px 10px;
+}
+.ExamData{
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    border: 1px solid rgb(172, 172, 172);
+    text-align: left;
+    height: 20px;
+    padding: 0px 10px 0px 10px;
+    margin: none;
+    color: rgb(80, 80, 80);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+    max-width: 350px;
+}
+.ExamTimetableDownload{
+    position: relative;
+    top:0px;
+    left:425px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    height: 25px;
+    color: #063d6c;
+    display: none;
+}
+.ExamTimetableDownload:hover{
+    color: rgb(81, 81, 81);
+}
+.infoCalender{
+    background: #fff;
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+    left:10px;
+    width: 1310px;
+    height: 30px;
+    top:20px;
+}
+.view{
+    color: #265b81;
+    font-size: 12px;
+    background: #ffffff;
+    border-left: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+    border-top: 4px solid #265b81;
+    border-bottom: none;
+    border-radius: 0mm;
+    position: absolute;
+    margin: 0;
+    padding: 0 0.6em;
+    line-height: 18px;
+    height: 31px;
+    display: block;
+    margin-bottom: -1px;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: normal;
+}
+.AddEvent{
+    left:42px;
+    position: absolute;
+    color: #6f327a;
+    font-size: 12px;
+    background-color: #fff;
+    border-top: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+    border-radius: 0mm;
+    margin: 0;
+    padding: 0 0.6em;
+    line-height: 32px;
+    height: 31px;
+    display: block;
+    margin-bottom: -1px;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: normal;
+}
+.MergeCalenders{
+    left:112px;
+    position: absolute;
+    color: #6f327a;
+    font-size: 12px;
+    background-color: #fff;
+    border-top: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+    border-radius: 0mm;
+    margin: 0;
+    padding: 0 0.6em;
+    line-height: 32px;
+    height: 31px;
+    display: block;
+    margin-bottom: -1px;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.Publish{
+    left:260px;
+    position: absolute;
+    color: #6f327a;
+    font-size: 12px;
+    background-color: #fff;
+    border-top: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+    border-radius: 0mm;
+    margin: 0;
+    padding: 0 0.6em;
+    line-height: 32px;
+    height: 31px;
+    display: block;
+    margin-bottom: -1px;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.Fields{
+    left:362px;
+    position: absolute;
+    color: #6f327a;
+    font-size: 12px;
+    background-color: #fff;
+    border-top: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+    border-radius: 0mm;
+    margin: 0;
+    padding: 0 0.6em;
+    line-height: 32px;
+    height: 31px;
+    display: block;
+    margin-bottom: -1px;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.CalenderBy{
+    position: relative;
+    left:10px;
+    top:40px;
+    font-size: 19px;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+.CalenderViewlabel{
+    font-size: 15px;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 600;
+    line-height: 1.05;
+}
+select{
+    position: relative;
+    background-color: #fff;
+    background-position: right 50%;
+    border: 1px solid #ccc;
+    color: #212121;
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    padding: 0.3em 2.2em 0.3em 0.5em;
+    text-align: left;
+    height: 30px;
+    border-radius: 5px;
+    left: 2px;
+    width: 170px;
+}
+
+.dayAndDate{
+    position: relative;
+    height: 47px;
+    background: rgb(255, 255, 255);
+    left:10px;
+    top: 53px;
+    width: 1295px;
+    border: 1px solid rgb(92, 91, 91);
+    border-left: 5px solid rgb(92, 91, 91);
+}
+.dateForCalender{
+    position: relative;
+    top:12px;
+    left: 12px;
+    color: #101010;
+    font-family: "Open Sans",sans-serif;
+    font-weight: lighter;
+}
+.ChangeCalenderDate{
+    position: relative;
+    height: 47px;
+    background: rgb(255, 255, 255);
+    left:10px;
+    top: 70px;
+    width: 1295px;
+}
+.Previous{
+    color: #494949;
+    font-family: "Open Sans",sans-serif;
+}
+.Today{
+    color: #494949;
+    font-family: "Open Sans",sans-serif;
+}
+.Next{
+    color: #494949;
+    font-family: "Open Sans",sans-serif;
+}
+
+/*Schedule*/
+.Schedule{
+    position: relative;
+    background: rgb(255, 255, 255);
+    left:10px;
+    top: 100px;
+    width: 1295px;
+    /*border: 1px solid rgb(92, 91, 91);*/
+    
+}
+
+.topRowWeekly{
+    background: #ffffff;
+    border: 1px solid #494949;
+}
+.TopColumns{
+    background: #b0cee5;
+    width: 180px;
+    color: #343434;
+    font-family: "Open Sans",sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+}
+.TopColumnsFirstRow{
+    background: #b0cee5;
+    width: 120px;
+    color: #343434;
+    font-family: "Open Sans",sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+}
+.ScheduleTime{
+    background-color: rgb(238, 238, 238);
+    color: #212020;
+    font-family: "Open Sans",sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    height: 30px;
+}
+.ScheduleTimes{
+    border-right: 1.5px solid #a9a9a9;
+    border-bottom: 1.5px solid #a9a9a9;
+}
+.Row1{
+    color: #6b6b6b;
+    font-family: "Open Sans",sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    border-bottom: 1px solid #a9a9a9;
+    height: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.Row{
+    color: #6b6b6b;
+    font-family: "Open Sans",sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    height: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.dateNumber{
+    color: #265b81;
+    text-decoration: underline;
+}
+        .Navigation{
+    position: absolute;
+    top:105px;
+    left:0px;
+    width:200px;
+    height:60px;
+    border-right: 1px solid #E5E5E5;
+    background: #FAFAFA;
+    min-height: calc(100vh - (53px * 2));
+    display: block;
+    z-index: 50;
+}
+.Overview{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:5px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif;
+}
+.Overview:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}
+
+#NavLabelIcon{
+    position: relative;
+    left:12px;
+    font-size: 15.5px;
+    -webkit-text-stroke: 0.5px #5d5c5c;
+}
+
+.StudentCounseling{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:47px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.Profile{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:87px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+.Profile:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}
+.Membership{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:129px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+.Membership:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}
+.Calender{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:171px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+/*.Calender:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}*/
+.Announcement{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:211px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+.Announcement:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}
+.WorksiteSetup{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:253px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+.WorksiteSetup:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}
+.Preferences{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:295px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+.Preferences:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}
+.Account{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:337px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+.Account:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}
+.TrustedApplications{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:379px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+.TrustedApplications:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}
+.CourseLink{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:421px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+.CourseLink:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}
+.StudyGuides{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:463px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+.StudyGuides:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}
+.EmailInfo{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:505px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+.EmailInfo:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}
+.Results{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:547px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+.Results:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}
+.Academicinformation{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:587px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+.Help{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height:40px;
+    left:-1px;
+    top:627px;
+    /*Align text in the middel of the div*/
+    vertical-align: middle;
+    line-height: 39px;
+    /*Font styling*/  
+    font-size: 13px;
+    color: #5d5c5c;
+    font-family: 'Open Sans', sans-serif; 
+}
+.Help:hover{
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #3b3a3a;
+}
+
+.textInNavigation{
+    position: absolute;
+    left:40px;
+    color: #5d5c5c;
+    font-weight: 520;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width:130px;
+}
+.registrationYear{
+    position: relative;
+}
+.Course{
+    position: relative;
+    left: 25px;
+    font-size: 12px;
+}
+.Course:hover{
+    color: #063d6c;
+    font-weight: 700;
+}
+.ResultsTableThirdYear{
+    position: relative;
+    left: 20px;
+    display: none;
+}
+.ResultsTableSecondYear{
+    position: relative;
+    left: 20px;
+    display: none;
+}
+.ResultsTableFirstYear{
+    position: relative;
+    left: 20px;
+    display: none;
+}
+.ResultsHeadings{
+    background-color: #337ab7;
+    color: white;
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: 550;
+    border: 0px solid white;
+    text-align: left;
+    height: 40px;
+    padding: 10px 10px 0px 10px;
+    width: 120px;
+}
+
+.ResultsData{
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    border: 1px solid rgb(172, 172, 172);
+    text-align: left;
+    height: 20px;
+    padding: 0px 10px 0px 10px;
+    margin: none;
+    color: rgb(80, 80, 80);
+}
+
+.ResultsDownload{
+    position: relative;
+    top:0px;
+    left:1120px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    height: 25px;
+    color: #063d6c;
+    display: none;
+}
+.ResultsDownload:hover{
+    color: rgb(81, 81, 81);
+}
+.LinkToStudent360{
+    position: relative;
+    left: 22px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+}
+        .Sites{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 52px;
+    height: 52px;
+    background: #FAFAFA;
+    border-bottom: 1px solid #E5E5E5;
+    box-shadow: 0 2px 4px -2px rgb(191, 191, 191);
+    z-index: 100;
+}
+.Home{
+    position: absolute;
+    left:10px;
+    top:9px;
+    width:102px;
+    height:32px;
+    color: #ffffff;
+    background: #265b81;
+    border: 1px solid #E5E5E5;
+}
+/*.HomeSite:hover{
+    border: 1px solid #b6b6b6;
+    position: absolute;
+    top:-1px;
+    left:-1px;
+    width:70px;
+    height:32px;
+}*/
+.Site1{
+    position: absolute;
+    left:125.5px;
+    top:9px;
+    width:171px;
+    height:32px;
+    background: #ffffff;
+    border: 1px solid #E5E5E5;
+}
+.SiteClick:hover{
+    border: 1px solid #b6b6b6;
+    position: absolute;
+    top:-1px;
+    left:-1px;
+    width:139px;
+    height:32px;
+}
+.Site2{
+    position: absolute;
+    left:309px;
+    top:9px;
+    width:171px;
+    height:32px;
+    background: #ffffff;
+    border: 1px solid #E5E5E5;
+}
+.Site3{
+    position: absolute;
+    left:492.5px;
+    top:9px;
+    width:171px;
+    height:32px;
+    background: #ffffff;
+    border: 1px solid #E5E5E5;
+}
+.Site4{
+    position: absolute;
+    left:676px;
+    top:9px;
+    width:171px;
+    height:32px;
+    background: #ffffff;
+    border: 1px solid #E5E5E5;
+}
+.Site5{
+    position: absolute;
+    left:859.5px;
+    top:9px;
+    width:178px;
+    height:32px;
+    background: #ffffff;
+    border: 1px solid #E5E5E5;
+}
+.Site5Click:hover{
+    border: 1px solid #b6b6b6;
+    position: absolute;
+    top:-1px;
+    left:-1px;
+    width:146px;
+    height:32px;
+}
+.Site6{
+    position: absolute;
+    left:1049px;
+    top:9px;
+    width:186px;
+    height:32px;
+    background: #ffffff;
+    border: 1px solid #E5E5E5;
+}
+.Site6Click:hover{
+    border: 1px solid #b6b6b6;
+    position: absolute;
+    top:-1px;
+    left:-1px;
+    width:155px;
+    height:32px;
+}
+.ArrowDown{
+    position: absolute;
+    right:-1px;
+    width:30px;
+    height:32px;
+    top:-1px;
+    color: #ffffff;
+    border: 1px solid #E5E5E5;
+}
+.ArrowDown:hover{
+    border: 1px solid #b6b6b6;
+}
+#DropDrownArrow{
+    position: absolute;
+    align-items: center;
+    color: #5d5c5c;
+    top:10px;
+    left:9.5px;
+    font-size: 13.5px;
+}
+#home{
+    position: absolute;
+    top:9.5px;
+    left:8px;
+    color: #ffffff;
+    font-size: 12px;
+}
+.Homelabel{
+    position: absolute;
+    top:8px;
+    left:25.5px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+}
+.SiteName{
+    position: absolute;
+    top:7px;
+    left:8px;
+    color: #5d5c5c;
+    font-size: 14px;
+    font-weight: 100;
+    font-family:  'Open Sans', sans-serif;
+}
+
+/* Div for when navigation items are clicked */
+.info{
+    position: absolute;
+    display: none;
+    left: 201px;
+    top: 110px;
+    width: 1330px;
+    height: 610px;
+    background-color: rgb(255, 255, 255);
+}
+
+/*Display for information */
+body {
+    color: #212121;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 1.55;
+}
+p{
+    position: relative;
+    left:20px;
+    top:2px;
+}
+
+button{
+    display: inline-block;
+    margin: 0;
+    padding: 7px 10px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: linear-gradient(#fff, #f9f9f9);
+    font-family: "Open Sans",sans-serif;
+    font-size: 1em;
+    line-height: 18px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 15%) inset;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 0 0 0 4px;
+}
+
+
+label{
+    position: relative;
+    left: 3px;
+}
+
+/*link and help buttons*/ 
+.helpButton:hover{
+    border: 1px #575757 solid;
+
+}
+.link:hover{
+    border: 1px #575757 solid;
+}
+
+.infostudentCounseling{
+    background: #fff;
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+    left:5px;
+    width: 1310px;
+}
+.headingInfo{
+    color: #265b81;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif; 
+    left: 8px;
+    position: relative;
+}
+
+#headingInfoIcon{
+    position: relative;
+    color: #265b81;
+    left:20px;
+    top:10px;
+}
+a[href] {
+    color: #265b81;
+    text-decoration: underline;
+}
+.link{
+    position: absolute;
+    right: 90px;
+    top:5px;
+    z-index: 100;
+}
+.helpButton{
+    position: absolute;
+    right: 20px;
+    top:5px;
+    z-index: 100;
+}
+        .TopHeader{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 52px;
+    background: #6f327a;
+    z-index: 200;
+}
+.EfundiLogo{
+    position: relative;
+    width: 103px;
+    height: 54px;
+    left:0.6vw;
+    top:-1px;
+    background-size: 100px 36px;
+}
+.AlertIcon{
+    position: absolute;
+    right:210px;
+    top: 15px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.SocialAlerts{
+    position: absolute;
+    right:175px;
+    top: 15px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.LineSeperation{
+    position: absolute;
+    right:163px;
+    font-family: Calibri; 
+    border-right: 1px solid #ffffff;
+    height: 32px;
+    top: 9.5px;
+    width: 2px;
+    background-color: #6f327a; 
+}
+.SiteInfo{
+    position: absolute;
+    width: 70px;
+    height: 53px;
+    right:90px;
+    top:-1px;
+    background-size: 100px 36px; 
+}
+.User{
+    position: absolute;
+    right:45px;
+    top: 6px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 100;
+}
+.UserInitials{
+    position: absolute;
+    right: 14px;
+    top: 13px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: Calibri;
+}
+.LineSeperation2{
+    position: absolute;
+    right:89px;
+    border-right: 1px solid #ffffff;
+    height: 32px;
+    top: 9.5px;
+    width: 2px;
+    background-color: #6f327a;
+}
+
+
+
+    </style>
 </head>
 <body>
     <div class="TopHeader">
         <div class="AlertIcon"><i class="fa fa-bell-o" aria-hidden="true"></i></div>
         <div class="SocialAlerts"><i class="fa fa-users" aria-hidden="true"></i></div>
         <div class="LineSeperation"></div>
+        <img src="Site.png" class="SiteInfo">
         <div class="LineSeperation2"></div>
         <div class="User"><i class="fa fa-user-circle" aria-hidden="true"></i></div>
-        <label class="UserInitials">HA</label>
-        <a href="NewHTML.html">new html page</a>
+        <div class="UserInitials">HA</div>
+        <img src="EfundiLogo.PNG" class="EfundiLogo">
+        
     </div>
     <div class="Sites">
-        <div class="Home"></div>
-        <div class="Site1"></div>
+        <div class="Home" id="Home" >
+            <div class="HomeSite" onclick="HomeSiteClicked()" id="HomeSite" onmouseover="mouseoverHomeSiteg()" onmouseout="MouseOutHomeSite()">
+                <i class="fa fa-home" aria-hidden="true" id="home"></i>
+                <label class="Homelabel" id="Homelabel">Home</label>
+            </div>
+            <div class="ArrowDown" id="ArrowDown">
+                <i class="fa fa-angle-down" aria-hidden="true" id="DropDrownArrow" onclick="HomeSiteClicked()" onmouseover="mouseoverHomeSiteg()" onmouseout="MouseOutHomeSite()" style="color: rgb(255, 255, 255);"></i>
+            </div>
+        </div>
+        <div class="Site1">
+            <div class="SiteClick">
+                <label class="SiteName">ITRI 611 1-1 V 2022</label>
+            </div>
+            <div class="ArrowDown">
+                <i class="fa fa-angle-down" aria-hidden="true" id="DropDrownArrow"></i>
+            </div>
+        </div>
+        <div class="Site2">
+            <div class="SiteClick">
+                <label class="SiteName">ITRI 613 1-1 V 2022</label>
+            </div>
+            <div class="ArrowDown">
+                <i class="fa fa-angle-down" aria-hidden="true" id="DropDrownArrow"></i>
+            </div>
+        </div>
+        <div class="Site3">
+            <div class="SiteClick">
+                <label class="SiteName">ITRI 614 1-1 V 2022</label>
+            </div>
+            <div class="ArrowDown">
+                <i class="fa fa-angle-down" aria-hidden="true" id="DropDrownArrow"></i>
+            </div>
+        </div>
+        <div class="Site4">
+            <div class="SiteClick">
+                <label class="SiteName">ITRI 616 1-1 V 2022</label>
+            </div>
+            <div class="ArrowDown">
+                <i class="fa fa-angle-down" aria-hidden="true" id="DropDrownArrow"></i>
+            </div>
+        </div>
+        <div class="Site5">
+            <div class="Site5Click">
+                <label class="SiteName">ITRI 671 V Year 2022</label>
+            </div>
+            <div class="ArrowDown">
+                <i class="fa fa-angle-down" aria-hidden="true" id="DropDrownArrow"></i>
+            </div>
+        </div>
+        <div class="Site6">
+            <div class="Site6Click">
+                <label class="SiteName">CMPG 313 1-1 V 2022</label>
+            </div>
+            <div class="ArrowDown">
+                <i class="fa fa-angle-down" aria-hidden="true" id="DropDrownArrow"></i>
+            </div>
+        </div>
+    </div>
+    <div class="Navigation">
+        <div class="Overview"> 
+                <i class="fa fa-list-ul" aria-hidden="true" id="NavLabelIcon"></i>
+                <label class="textInNavigation">Overview</label>
+        </div> 
+        <div class="StudentCounseling" onclick="ClickStudentCounseling()" onmouseover="MouseOverStudentCounseling()" onmouseleave="MouseLeaveStudentCounseling()" id="StudentCounseling"> 
+            <i class="fa fa-globe" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Student Counseling & Development</label>
+        </div> 
+        <div class="Profile"> 
+            <i class="fa fa-user" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Profile</label>
+        </div> 
+        <div class="Membership"> 
+            <i class="fa fa-users" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Membership</label>
+        </div> 
+        <div class="Calender" onclick="ClickCalender()" onmouseover="MouseOverCalender()" onmouseleave="MouseLeaveCalender()" id="Calender"> 
+            <i class="fa fa-calendar" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Calender</label>
+        </div> 
+        <div class="Announcement"> 
+            <i class="fa fa-bullhorn" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Announcement</label>
+        </div>
+        <div class="WorksiteSetup"> 
+            <i class="fa fa-cogs" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Worksite Setup</label>
+        </div>  
+        <div class="Preferences"> 
+            <i class="fa fa-cog" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Preferences</label>
+        </div>  
+        <div class="Account"> 
+            <i class="fa fa-user" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Account</label>
+        </div> 
+        <div class="TrustedApplications"> 
+            <i class="fa fa-key" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Trusted Applications</label>
+        </div> 
+        <div class="CourseLink"> 
+            <i class="fa fa-globe" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Course Link</label>
+        </div> 
+        <div class="StudyGuides"> 
+            <i class="fa fa-globe" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Study Guides</label>
+        </div> 
+        <div class="EmailInfo"> 
+            <i class="fa fa-globe" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Email Info</label>
+        </div> 
+        <div class="Results" onclick="ClickResults()" onmouseover="MouseOverResults()" onmouseleave="MouseLeaveResults()" id="Results"> 
+            <i class="fa fa-book" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Results</label>
+        </div> 
+        <div class="Academicinformation" onclick="ClickAcademicInformation()" onmouseover="MouseOverAcademicInformation()" onmouseleave="MouseLeaveAcademicInformation()" id="AcademicInformationTab"> 
+            <i class="fa fa-info-circle" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Academic information</label>
+        </div> 
+        <div class="Help"> 
+            <i class="fa fa-question-circle" aria-hidden="true" id="NavLabelIcon"></i>
+            <label class="textInNavigation">Help</label>
+        </div> 
+    </div>
+
+    <div id="studentCounselingAndDevelopment" class="info">
+        <i class="fa fa-globe" aria-hidden="true" id="headingInfoIcon"><label class="headingInfo">Student counseling & development </label></i>    
+        <button class="link"><i class="fa fa-link" aria-hidden="true"></i> <label>Link</label></button>
+        <button class="helpButton"><i class="fa fa-question" aria-hidden="true"></i> <label>Help</label></button>
+        <div class="infostudentCounseling">
+            <p>Page launched in a new window. </p>
+            <p><a href="http://scd-nwu-ac-za.web.nwu.ac.za" onclick="window.open('http://scd-nwu-ac-za.web.nwu.ac.za','_blank'); return false;" target="_blank">Re-launch page in a new window.</a></p>
+        </div>
+    </div>
+    <div id="CalenderPage" class="info">
+        <i class="fa fa-calendar" aria-hidden="true" id="headingInfoIcon"><label class="headingInfo">Calender</label></i>    
+        <button class="link"><i class="fa fa-link" aria-hidden="true"></i> <label>Link</label></button>
+        <button class="helpButton"><i class="fa fa-question" aria-hidden="true"></i> <label>Help</label></button>
+        <div class="infoCalender">
+            <button class="view" id="view" onClick="ViewClicked()">View</button>
+            <button class="AddEvent" id="AddEvent" onClick="AddEventClicked()">Add Event </button>
+            <button class="MergeCalenders" id="MergeCalenders" onClick="MergeCalendersClicked()">Merge Internal Calenders </button>
+            <button class="Publish" id="Publish" onClick="PublishClicked()">Publish (private) </button>
+            <button class="Fields" id="Fields" onClick="FieldsClicked()">Fields </button>
+        </div>
+        <div class="CalenderBy">
+            <label id="CalenderbyLabel">Calender by week</label>
+            <br>
+            <br>
+            <label class="CalenderViewlabel">View</label>
+            <select name="ViewOfCalender" id="ViewOfCalender" onclick="CalenderBy()">
+                <option value="day">Calender by day</option>
+                <option value="week">Calender by week</option>
+                <option value="month">Calender by month</option>
+                <option value="year">Calender by year</option>
+                <option value="list of events">List of events</option>
+              </select>
+        </div>
+        <div class="dayAndDate">
+            <label class="dateForCalender">Sunday 24 July 2022 - Saturday 30 July 2022 SAST</label>
+        </div>
+        <div class="ChangeCalenderDate">
+            <table>
+                <tr>
+                  <th><button class="Previous" id="Previous">&lt Previous week</button></th>
+                  <th><button class="Today" id="Today">Today</button></th>
+                  <th><button class="Next" id="Next">Next week &gt</button></th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="Schedule">
+            <table>
+                <tr class="topRowWeekly">
+                    <th class="TopColumnsFirstRow"></th>
+                    <th class="TopColumns" id="Monday">Monday</th>
+                    <th class="TopColumns" id="Tuesday">Tuesday</th>
+                    <th class="TopColumns" id="Wednesday">Wednesday</th>
+                    <th class="TopColumns" id="thursday">Thursday</th>
+                    <th class="TopColumns" id="Friday">Friday</th>
+                    <th class="TopColumns" id="Saturday">Saturday</th>
+                    <th class="TopColumns" id="Sunday">Sunday</th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">7:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule7">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule7">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule7">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule7">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule7">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule7">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule7">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="ScheduleTime">8:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule8">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"> CMPG 313</td>
+                            </tr>
+                            <tr>
+                                <td class="Row"> CMPG 313</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule8">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule8">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule8">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule8">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule8">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule8">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">9:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule9">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1">CMPG 311</td>
+                            </tr>
+                            <tr>
+                                <td class="Row">CMPG 311</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule9">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1">CMPG 312</td>
+                            </tr>
+                            <tr>
+                                <td class="Row">CMPG 312</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule9">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"> CMPG 315 - Quiz 1 due</td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule9">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule9">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule9">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule9">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">10:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule10">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule10">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule10">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1">CMPG 312</td>
+                            </tr>
+                            <tr>
+                                <td class="Row">CMPG 312</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule10">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule10">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1">CMPG 315</td>
+                            </tr>
+                            <tr>
+                                <td class="Row">CMPG 315</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule10">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule10">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">11:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule11">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule11">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule11">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule11">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule11">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule11">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule11">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">12:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule12">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule12">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1">CMPG 311</td>
+                            </tr>
+                            <tr>
+                                <td class="Row">CMPG 311</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule12">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule12">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule12">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule12">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule12">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">13:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule13">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1">CMPG 314</td>
+                            </tr>
+                            <tr>
+                                <td class="Row">CMPG 314</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule13">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule13">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule13">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule13">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule13">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule13">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">14:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule14">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1">CMPG 314 - Quiz 3 due</td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule14">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1">CMPG 313</td>
+                            </tr>
+                            <tr>
+                                <td class="Row">CMPG 313</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule14">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule14">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1">TEST - CMPG 311</td>
+                            </tr>
+                            <tr>
+                                <td class="Row">TEST - CMPG 311</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule14">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule14">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule14">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">15:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule15">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule15">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule15">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule15">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1">TEST - CMPG 311</td>
+                            </tr>
+                            <tr>
+                                <td class="Row">TEST - CMPG 311</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule15">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1">CMPG 312</td>
+                            </tr>
+                            <tr>
+                                <td class="Row">CMPG 312</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule15">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule15">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">16:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule16">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule16">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule16">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1">CMPG 315</td>
+                            </tr>
+                            <tr>
+                                <td class="Row">CMPG 315</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule16">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule16">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule16">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule16">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">17:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule17">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule17">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule17">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule17">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule17">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row">CMPG 315 - Assignmemnt 5 due</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule17">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule17">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">18:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule18">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule18">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule18">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule18">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule18">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule18">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule18">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">19:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule19">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule19">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule19">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule19">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule19">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule19">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule19">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">20:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule20">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule20">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule20">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule20">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule20">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule20">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule20">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">21:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule21">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule21">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule21">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule21">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule21">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule21">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule21">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">22:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule22">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule22">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule22">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule22">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule22">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule22">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule22">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">23:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule23">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule23">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule23">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule23">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule23">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule23">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule23">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr><!-- Time change -->
+                <tr>
+                    <th class="ScheduleTime">00:00</th>
+                    <th class="ScheduleTimes" id="mondaySchedule00">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="tuesdaySchedule00">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="WednesdaySchedule00">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="thursdaySchedule00">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="FridaySchedule00">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row">CMPG 312 - Assignment 3 due</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SaturdaySchedule00">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="ScheduleTimes" id="SundaySchedule00">
+                        <table width="100%">
+                            <tr>
+                                <td class="Row1"></td>
+                            </tr>
+                            <tr>
+                                <td class="Row"></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div id="ResultsPage" class="info">
+        <i class="fa fa-book" aria-hidden="true" id="headingInfoIcon"><label class="headingInfo">Results</label></i>    
+        <button class="link"><i class="fa fa-link" aria-hidden="true"></i> <label>Link</label></button>
+        <button class="helpButton"><i class="fa fa-question" aria-hidden="true"></i> <label>Help</label></button>
+        <div class="infostudentCounseling">
+            <p>University number 32656106 MISS HA AHMED (STUDENT)</p>
+            <p class="registrationYear"><b>Registration year:</b> 2022</p>
+            <label class="Course" onclick="OpenThirdYearResults()" id="ThirdYear">2DXH013 N302V BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY <i class="fa fa-level-down" aria-hidden="true"></i></label>
+            <button class="ResultsDownload" title="Download Third Year Results" id="DownloadThirdYearResults"><i class="fa fa-download" aria-hidden="true"></i></button>
+            <table class="ResultsTableThirdYear" id="ResultsTableThirdYear">
+                <tr>
+                    <th class="ResultsHeadings">Module</th>
+                    <th class="ResultsHeadings">Credits</th>
+                    <th class="ResultsHeadings">Exam Opportunity</th>
+                    <th class="ResultsHeadings">Participation Mark</th>
+                    <th class="ResultsHeadings">Exam Mark</th>
+                    <th class="ResultsHeadings">Module Mark</th>
+                    <th class="ResultsHeadings">Result</th>
+                    <th class="ResultsHeadings">Action</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG311</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">82</th>
+                    <th class="ResultsData">52</th>
+                    <th class="ResultsData">67</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG312</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">65</th>
+                    <th class="ResultsData">65</th>
+                    <th class="ResultsData">65</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG313</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">72</th>
+                    <th class="ResultsData">58</th>
+                    <th class="ResultsData">68</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG315</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">49</th>
+                    <th class="ResultsData">53</th>
+                    <th class="ResultsData">68</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG321</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData" style="color: #276ca9;"></th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG322</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData" style="color: #276ca9;"></th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG323</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData" style="color: #276ca9;"></th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG325</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData"></th>
+                    <th class="ResultsData" style="color: #276ca9;"></th>
+                </tr>
+            </table>
+            <p><b>Registration year:</b> 2021</p>
+            <label class="Course" onclick="OpenSecondYearResults()" id="SecondYear">2DXH012 N302V BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY <i class="fa fa-level-down" aria-hidden="true"></i></label>
+            <button class="ResultsDownload" title="Download Second Year Results" id="DownloadSecondYearResults"><i class="fa fa-download" aria-hidden="true"></i></button>
+            <table class="ResultsTableSecondYear" id="ResultsTableSecondYear">
+                <tr>
+                    <th class="ResultsHeadings">Module</th>
+                    <th class="ResultsHeadings">Credits</th>
+                    <th class="ResultsHeadings">Exam Opportunity</th>
+                    <th class="ResultsHeadings">Participation Mark</th>
+                    <th class="ResultsHeadings">Exam Mark</th>
+                    <th class="ResultsHeadings">Module Mark</th>
+                    <th class="ResultsHeadings">Result</th>
+                    <th class="ResultsHeadings">Action</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">BMAN223</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">67</th>
+                    <th class="ResultsData">67</th>
+                    <th class="ResultsData">67</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG211</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">86</th>
+                    <th class="ResultsData">86</th>
+                    <th class="ResultsData">86</th>
+                    <th class="ResultsData">Distinction</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG212</th>
+                    <th class="ResultsData">8</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">77</th>
+                    <th class="ResultsData">77</th>
+                    <th class="ResultsData">77</th>
+                    <th class="ResultsData">Distinction</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG213</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">51</th>
+                    <th class="ResultsData">51</th>
+                    <th class="ResultsData">51</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG214</th>
+                    <th class="ResultsData">8</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">81</th>
+                    <th class="ResultsData">81</th>
+                    <th class="ResultsData">81</th>
+                    <th class="ResultsData">Distinction</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG215</th>
+                    <th class="ResultsData">8</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">81</th>
+                    <th class="ResultsData">81</th>
+                    <th class="ResultsData">81</th>
+                    <th class="ResultsData">Distinction</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG221</th>
+                    <th class="ResultsData">8</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">69</th>
+                    <th class="ResultsData">69</th>
+                    <th class="ResultsData">69</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG222</th>
+                    <th class="ResultsData">8</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">73</th>
+                    <th class="ResultsData">73</th>
+                    <th class="ResultsData">73</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG223</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">50</th>
+                    <th class="ResultsData">50</th>
+                    <th class="ResultsData">50</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">MTHS225</th>
+                    <th class="ResultsData">8</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">70</th>
+                    <th class="ResultsData">70</th>
+                    <th class="ResultsData">70</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">WVNS211</th>
+                    <th class="ResultsData">12</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">71</th>
+                    <th class="ResultsData">71</th>
+                    <th class="ResultsData">71</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">WVNS221</th>
+                    <th class="ResultsData">12</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">85</th>
+                    <th class="ResultsData">85</th>
+                    <th class="ResultsData">85</th>
+                    <th class="ResultsData">Distinction</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+            </table>
+            <p><b>Registration year:</b> 2020</p>
+            <label class="Course" onclick="OpenFirstYearResults()" id="FirstYear">2DXH011 N302V BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY <i class="fa fa-level-down" aria-hidden="true"></i></label>
+            <button class="ResultsDownload" title="Download First Year Results" id="DownloadFirstYearResults"><i class="fa fa-download" aria-hidden="true"></i></button>
+            <table class="ResultsTableFirstYear" id="ResultsTableFirstYear">
+                <tr>
+                    <th class="ResultsHeadings">Module</th>
+                    <th class="ResultsHeadings">Credits</th>
+                    <th class="ResultsHeadings">Exam Opportunity</th>
+                    <th class="ResultsHeadings">Participation Mark</th>
+                    <th class="ResultsHeadings">Exam Mark</th>
+                    <th class="ResultsHeadings">Module Mark</th>
+                    <th class="ResultsHeadings">Result</th>
+                    <th class="ResultsHeadings">Action</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">ACCS111</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">89</th>
+                    <th class="ResultsData">74</th>
+                    <th class="ResultsData">82</th>
+                    <th class="ResultsData">Distinction</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">ACCS121</th>
+                    <th class="ResultsData">16</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">72</th>
+                    <th class="ResultsData">73</th>
+                    <th class="ResultsData">73</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">ALDE122</th>
+                    <th class="ResultsData">12</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">0</th>
+                    <th class="ResultsData">0</th>
+                    <th class="ResultsData">0</th>
+                    <th class="ResultsData">Module Reco...</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">ALDE122</th>
+                    <th class="ResultsData">12</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">64</th>
+                    <th class="ResultsData">70</th>
+                    <th class="ResultsData">66</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">BMAN111</th>
+                    <th class="ResultsData">12</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">71</th>
+                    <th class="ResultsData">74</th>
+                    <th class="ResultsData">73</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG111</th>
+                    <th class="ResultsData">12</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">91</th>
+                    <th class="ResultsData">90</th>
+                    <th class="ResultsData">91</th>
+                    <th class="ResultsData">Distinction</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG121</th>
+                    <th class="ResultsData">12</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">94</th>
+                    <th class="ResultsData">96</th>
+                    <th class="ResultsData">95</th>
+                    <th class="ResultsData">Distinction</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">CMPG122</th>
+                    <th class="ResultsData">12</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">78</th>
+                    <th class="ResultsData">68</th>
+                    <th class="ResultsData">73</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">MTHS111</th>
+                    <th class="ResultsData">12</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">69</th>
+                    <th class="ResultsData">54</th>
+                    <th class="ResultsData">62</th>
+                    <th class="ResultsData">Passed</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+                <tr>
+                    <th class="ResultsData">STTN111</th>
+                    <th class="ResultsData">12</th>
+                    <th class="ResultsData">1</th>
+                    <th class="ResultsData">91</th>
+                    <th class="ResultsData">64</th>
+                    <th class="ResultsData">78</th>
+                    <th class="ResultsData">Distinction</th>
+                    <th class="ResultsData" style="color: #276ca9;">View Evaluation</th>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <a class="LinkToStudent360" href="https://diyservices.nwu.ac.za/student-360"><i class="fa fa-external-link" aria-hidden="true"></i>Link to Student 360</a>
+        </div>
+    </div>
+
+    
+    <div id="AcademicinformationPage" class="info">
+        <i class="fa fa-info-circle" aria-hidden="true" id="headingInfoIcon"><label class="headingInfo">Academic Information</label></i>    
+        <button class="link"><i class="fa fa-link" aria-hidden="true"></i> <label>Link</label></button>
+        <button class="helpButton"><i class="fa fa-question" aria-hidden="true"></i> <label>Help</label></button>
+        <div class="infoAcademicInfoTabs">
+            <p class="AcademicInfoTabs1" id="AcademicInfoTabs" onclick="OpenApplicationInformation()">Application Information <i class="fa fa-level-down" aria-hidden="true"></i></p>
+            <label class="ApplicationYear4" id="ApplicationYear4" onclick="OpenApplicationYear2022()"><b>Application year:</b> 2022 <i class="fa fa-level-down" aria-hidden="true"></i></label>
+            <button class="ApplicationDownload" title="Download First Year Results" id="DownloadFourthYearApplicationStatus"><i class="fa fa-download" aria-hidden="true"></i></button>
+            <table class="ApplicationInformationTableYear4" id="ApplicationInformationTableYear4">
+                <tr>
+                    <th class="ApplicationInformationHeadings">Choice</th>
+                    <th class="ApplicationInformationHeadings">Qualification Program Level</th>
+                    <th class="ApplicationInformationHeadings">Curriculum</th>
+                    <th class="ApplicationInformationHeadings">Status</th>
+                    <th class="ApplicationInformationHeadings">Reason</th>
+                </tr>
+                <tr>
+                    <th class="ApplicationInformationData">1</th>
+                    <th class="ApplicationInformationData" title="BACHELOR OF SCEINCE HONORS IN COMPUTER SCIENCE AND INFORMATION TECHNOLOGY">BACHELOR OF SCEINCE HONORS IN COMPUTER SCIENCE AND INFORMATION TECHNOLOGY</th>
+                    <th class="ApplicationInformationData">N302V</th>
+                    <th class="ApplicationInformationData">Accepted</th>
+                    <th class="ApplicationInformationData">Faculty</th>
+                </tr>
+            </table>
+            <label class="ApplicationYear1" id="ApplicationYear1" onclick="OpenApplicationYear2019()"><b>Application year:</b> 2019 <i class="fa fa-level-down" aria-hidden="true"></i></label>
+            <button class="ApplicationDownload" title="Download First Year Results" id="DownloadFirstYearApplicationStatus"><i class="fa fa-download" aria-hidden="true"></i></button>
+            <table class="ApplicationInformationTableYear1" id="ApplicationInformationTableYear1">
+                <tr>
+                    <th class="ApplicationInformationHeadings">Choice</th>
+                    <th class="ApplicationInformationHeadings">Qualification Program Level</th>
+                    <th class="ApplicationInformationHeadings">Curriculum</th>
+                    <th class="ApplicationInformationHeadings">Status</th>
+                    <th class="ApplicationInformationHeadings">Reason</th>
+                </tr>
+                <tr>
+                    <th class="ApplicationInformationData" style="width: 10px;">1</th>
+                    <th class="ApplicationInformationData" title="BACHELOR OF SCEINCE IN INFORMATION TECHNOLOGY">BACHELOR OF SCEINCE IN INFORMATION TECHNOLOGY</th>
+                    <th class="ApplicationInformationData">N302V</th>
+                    <th class="ApplicationInformationData">Accepted</th>
+                    <th class="ApplicationInformationData"></th>
+                </tr>
+            </table>
+            <div class="Division"></div>
+            <!-- Registration information -->
+            <p class="AcademicInfoTabs" id="RegistrationTabInfo" onclick="OpenRegistrationInformationInfo()">Registration Information <i class="fa fa-level-down" aria-hidden="true"></i></p>
+            <label class="registrationYear" id="registrationYear2022" onclick="OpenRegistration2022()"><b>Registration year:</b> 2022 <i class="fa fa-level-down" aria-hidden="true"></i></label>
+            <button class="RegistrationDownload" title="Download proof of registration for 2022" id="Download2022Registration"><i class="fa fa-download" aria-hidden="true"></i></button>
+            <table class="RegistrationTable" id="RegistrationTable2022">
+                <tr>
+                    <th class="RegistrationHeadings"></th>
+                    <th class="RegistrationHeadings">Certifiate Name</th>
+                    <th class="RegistrationHeadings">Registration Date</th>
+                    <th class="RegistrationHeadings">Registration Status</th>
+                    <th class="RegistrationHeadings">Action</th>
+                </tr>
+                <tr>
+                    <th class="RegistrationData">1</th>
+                    <th class="RegistrationData">BACHELOR OF SCIENCE HONORS IN COMPUTER SCIENCE AND INFORMATION TECHNOLOGY</th>
+                    <th class="RegistrationData">2022-01-31</th>
+                    <th class="RegistrationData">Active</th>
+                    <th class="RegistrationData" style="color: #1a598f;" ><i class="fa fa-clipboard" aria-hidden="true"></i></th>
+                </tr>
+            </table>
+            <label class="registrationYear" id="registrationYear2021" onclick="OpenRegistration2021()"><b>Registration year:</b> 2021 <i class="fa fa-level-down" aria-hidden="true"></i></label>
+            <button class="RegistrationDownload" title="Download proof of registration for 2021" id="Download2021Registration"><i class="fa fa-download" aria-hidden="true"></i></button>
+            <table class="RegistrationTable" id="RegistrationTable2021">
+                <tr>
+                    <th class="RegistrationHeadings"></th>
+                    <th class="RegistrationHeadings">Certifiate Name</th>
+                    <th class="RegistrationHeadings">Registration Date</th>
+                    <th class="RegistrationHeadings">Registration Status</th>
+                    <th class="RegistrationHeadings">Action</th>
+                </tr>
+                <tr>
+                    <th class="RegistrationData">1</th>
+                    <th class="RegistrationData">BACHELOR OF SCIENCE HONORS IN INFORMATION TECHNOLOGY</th>
+                    <th class="RegistrationData">2022-02-01</th>
+                    <th class="RegistrationData">Active</th>
+                    <th class="RegistrationData" style="color: #1a598f;" ><i class="fa fa-clipboard" aria-hidden="true"></i></th>
+                </tr>
+            </table>
+            <label class="registrationYear" id="registrationYear2020" onclick="OpenRegistration2020()"><b>Registration year:</b> 2020 <i class="fa fa-level-down" aria-hidden="true"></i></label>
+            <button class="RegistrationDownload" title="Download proof of registration for 2020" id="Download2020Registration"><i class="fa fa-download" aria-hidden="true"></i></button>
+            <table class="RegistrationTable" id="RegistrationTable2020">
+                <tr>
+                    <th class="RegistrationHeadings"></th>
+                    <th class="RegistrationHeadings">Certifiate Name</th>
+                    <th class="RegistrationHeadings">Registration Date</th>
+                    <th class="RegistrationHeadings">Registration Status</th>
+                    <th class="RegistrationHeadings">Action</th>
+                </tr>
+                <tr>
+                    <th class="RegistrationData">1</th>
+                    <th class="RegistrationData">BACHELOR OF SCIENCE HONORS IN INFORMATION TECHNOLOGY</th>
+                    <th class="RegistrationData">2022-01-28</th>
+                    <th class="RegistrationData">Active</th>
+                    <th class="RegistrationData" style="color: #1a598f;" ><i class="fa fa-clipboard" aria-hidden="true"></i></th>
+                </tr>
+            </table>
+            <label class="registrationYear" id="registrationYear2019" onclick="OpenRegistration2019()"><b>Registration year:</b> 2019 <i class="fa fa-level-down" aria-hidden="true"></i></label>
+            <button class="RegistrationDownload" title="Download proof of registration for 2019" id="Download2019Registration"><i class="fa fa-download" aria-hidden="true"></i></button>
+            <table class="RegistrationTable" id="RegistrationTable2019">
+                <tr>
+                    <th class="RegistrationHeadings"></th>
+                    <th class="RegistrationHeadings">Certifiate Name</th>
+                    <th class="RegistrationHeadings">Registration Date</th>
+                    <th class="RegistrationHeadings">Registration Status</th>
+                    <th class="RegistrationHeadings">Action</th>
+                </tr>
+                <tr>
+                    <th class="RegistrationData">1</th>
+                    <th class="RegistrationData">BACHELOR OF SCIENCE HONORS IN INFORMATION TECHNOLOGY</th>
+                    <th class="RegistrationData">2022-01-21</th>
+                    <th class="RegistrationData">Active</th>
+                    <th class="RegistrationData" style="color: #1a598f;" ><i class="fa fa-clipboard" aria-hidden="true"></i></th>
+                </tr>
+            </table>
+            <div class="Division"></div>
+            <!-- Graduation information -->
+            <p class="AcademicInfoTabs"  id="TimetablesInfo" onclick="OpenTimetables()">Timetables <i class="fa fa-level-down" aria-hidden="true"></i></p>
+            <label class="Timetable" id="TimetableClass" onclick="TimetableClass()"><b>Class Timetable </b><i class="fa fa-level-down" aria-hidden="true"></i></label>
+            <button class="RegistrationDownload" title="Download class timetable" id="DownloadClassTimetable"><i class="fa fa-download" aria-hidden="true"></i></button>
+            <table class="RegistrationTable" id="ClassTimeTable">
+                <tr>
+                    <th class="RegistrationHeadings"></th>
+                    <th class="RegistrationHeadings">Certifiate Name</th>
+                    <th class="RegistrationHeadings">Registration Date</th>
+                    <th class="RegistrationHeadings">Registration Status</th>
+                    <th class="RegistrationHeadings">Action</th>
+                </tr>
+                <tr>
+                    <th class="RegistrationData">1</th>
+                    <th class="RegistrationData">BACHELOR OF SCIENCE HONORS IN INFORMATION TECHNOLOGY</th>
+                    <th class="RegistrationData">2022-01-21</th>
+                    <th class="RegistrationData">Active</th>
+                    <th class="RegistrationData" style="color: #1a598f;" ><i class="fa fa-clipboard" aria-hidden="true"></i></th>
+                </tr>
+            </table>
+            <label class="Timetable" id="TimetableExam" onclick="TimetableExam()"><b>Exam Timetable </b><i class="fa fa-level-down" aria-hidden="true"></i></label>
+            <button class="ExamTimetableDownload" title="Download exam timetable" id="DownloadExamTimetable"><i class="fa fa-download" aria-hidden="true"></i></button>
+            <table class="ExamTimeTable" id="ExamTimeTable">
+                <tr>
+                    <th class="ExamHeadings">Module</th>
+                    <th class="ExamHeadings">Date</th>
+                    <th class="ExamHeadings">Time</th>
+                    <th class="ExamHeadings">Venue</th>
+                    <th class="ExamHeadings">Opportunity</th>
+                </tr>
+                <tr>
+                    <th class="ExamData">CMPG 321</th>
+                    <th class="ExamData">17 Novemeber 2022</th>
+                    <th class="ExamData" style="text-align: right;">9:00</th>
+                    <th class="ExamData">A21</th>
+                    <th class="ExamData">1</th>
+                </tr>
+                <tr>
+                    <th class="ExamData">CMPG 322</th>
+                    <th class="ExamData">7 Novemeber 2022</th>
+                    <th class="ExamData" style="text-align: right;">14:00</th>
+                    <th class="ExamData">A21</th>
+                    <th class="ExamData">1</th>
+                </tr>
+                <tr>
+                    <th class="ExamData">CMPG 323</th>
+                    <th class="ExamData">11 Novemeber 2022</th>
+                    <th class="ExamData" style="text-align: right;">14:00</th>
+                    <th class="ExamData">A21</th>
+                    <th class="ExamData">1</th>
+                </tr>
+                <tr>
+                    <th class="ExamData">CMPG 325</th>
+                    <th class="ExamData">30 Novemeber 2022</th>
+                    <th class="ExamData" style="text-align: right;">9:00</th>
+                    <th class="ExamData">A21</th>
+                    <th class="ExamData">1</th>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
+
