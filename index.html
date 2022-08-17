@@ -13,7 +13,845 @@
     <link rel="stylesheet" href="Results.css">
     <link rel="stylesheet" href="AcademicInformation.css">
     <script src="https://kit.fontawesome.com/5907786841.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script>
+        /*function HomeSiteClicked(){
+   document.getElementById("HomeSite").style.backgroundColor = "#326B97";
+   console.log("changed colour");
+}
+
+function mouseoverHomeSiteg(){
+    document.getElementById("HomeSite").style.backgroundColor = "#00000";
+}   
+
+function MouseOutHomeSite(){
+    if(document.getElementById("HomeSite").style.backgroundColor != "#326B97")
+    {
+        document.getElementById("HomeSite").style.backgroundColor = "#fffff";
+    }
+}*/
+var on=0;
+function HomeSiteClicked(){
+    document.getElementById("Home").style.backgroundColor = "#265b81";
+    document.getElementById("Homelabel").style.color = "#ffffff";
+    document.getElementById("home").style.color = "#ffffff";
+    document.getElementById("DropDrownArrow").style.color = "#ffffff";
+    on = 1;
+}
+
+function mouseoverHomeSiteg(){
+    /*if (on == 0){
+        //document.getElementById("Home").style.backgroundColor = "rgb(0, 255, 255)";
+        document.getElementById("ArrowDown").style.border ="1px solid #b6b6b6";
+        //document.getElementById("ArrowDown").style.background ="#ffffff";
+    }*/
+    if (on == 1){
+        document.getElementById("Home").style.backgroundColor = "#447595";
+    }
+}
+
+function MouseOutHomeSite(){
+    if (on == 0){
+        //document.getElementById("Home").style.backgroundColor = "rgb(209, 72, 209)";
+    }
+    if (on == 1){
+        document.getElementById("Home").style.backgroundColor = "#265b81";
+    }
+}
+var ClickAcademicInformationClicked = 0; 
+function ClickAcademicInformation(){
+    document.getElementById("AcademicinformationPage").style.display = "block";
+    document.getElementById("AcademicInformationTab").style.background = "#ffff";
+    document.getElementById("AcademicInformationTab").style.border = "none";
+    document.getElementById("AcademicInformationTab").style.borderLeft = "5px solid #265b81";
+    document.getElementById("AcademicInformationTab").style.color = "#265b81";
+    ClickAcademicInformationClicked = 1;
+
+    //hide calender page
+    document.getElementById("CalenderPage").style.display = "none";
+    document.getElementById("Calender").style.background = "#FAFAFA";
+    document.getElementById("Calender").style.border = "1px solid #E5E5E5";
+    document.getElementById("Calender").style.color = "#5d5c5c";
+    CalenderClicked = 0;
+
+    //hide Results page
+    document.getElementById("ResultsPage").style.display = "none";
+    document.getElementById("Results").style.background = "#FAFAFA";
+    document.getElementById("Results").style.border = "1px solid #E5E5E5";
+    document.getElementById("Results").style.color = "#5d5c5c";
+    resultsClicked = 0;
+
+    // hide student counseling page 
+    document.getElementById("studentCounselingAndDevelopment").style.display = "none";
+    document.getElementById("StudentCounseling").style.background = "#FAFAFA";
+    document.getElementById("StudentCounseling").style.border = "1px solid #E5E5E5";
+    document.getElementById("StudentCounseling").style.color = "#5d5c5c";
+    StudentCounselingClicked = 0;
+}
+function MouseOverAcademicInformation(){
+    if(ClickAcademicInformationClicked === 0)
+    {
+        document.getElementById("AcademicInformationTab").style.background = "#dddddd";
+        document.getElementById("AcademicInformationTab").style.border = "none";
+        document.getElementById("AcademicInformationTab").style.borderLeft = "5px solid #3b3a3a";
+    }
+}
+function MouseLeaveAcademicInformation(){
+    if(ClickAcademicInformationClicked === 0)
+    {
+        document.getElementById("AcademicInformationTab").style.background = "#FAFAFA";
+        document.getElementById("AcademicInformationTab").style.border = "1px solid #E5E5E5";
+    }
+}
+
+//open pages for navigation
+var StudentCounselingClicked = 0; 
+function ClickStudentCounseling(){
+    document.getElementById("studentCounselingAndDevelopment").style.display = "block";
+    document.getElementById("StudentCounseling").style.background = "#ffff";
+    document.getElementById("StudentCounseling").style.border = "none";
+    document.getElementById("StudentCounseling").style.borderLeft = "5px solid #265b81";
+    document.getElementById("StudentCounseling").style.color = "#265b81";
+    StudentCounselingClicked = 1;
+
+    //hide Acadamic Information page
+    document.getElementById("AcademicinformationPage").style.display = "none";
+    document.getElementById("AcademicInformationTab").style.background = "#FAFAFA";
+    document.getElementById("AcademicInformationTab").style.border = "1px solid #E5E5E5";
+    document.getElementById("AcademicInformationTab").style.color = "#5d5c5c";
+    ClickAcademicInformationClicked = 0;
+
+    //hide calender page
+    document.getElementById("CalenderPage").style.display = "none";
+    document.getElementById("Calender").style.background = "#FAFAFA";
+    document.getElementById("Calender").style.border = "1px solid #E5E5E5";
+    document.getElementById("Calender").style.color = "#5d5c5c";
+    CalenderClicked = 0;
+
+    //hide Results page
+    document.getElementById("ResultsPage").style.display = "none";
+    document.getElementById("Results").style.background = "#FAFAFA";
+    document.getElementById("Results").style.border = "1px solid #E5E5E5";
+    document.getElementById("Results").style.color = "#5d5c5c";
+    resultsClicked = 0;
+}
+function MouseOverStudentCounseling(){
+    if(StudentCounselingClicked === 0)
+    {
+        document.getElementById("StudentCounseling").style.background = "#dddddd";
+        document.getElementById("StudentCounseling").style.border = "none";
+        document.getElementById("StudentCounseling").style.borderLeft = "5px solid #3b3a3a";
+    }
+}
+function MouseLeaveStudentCounseling(){
+    if(StudentCounselingClicked === 0)
+    {
+        document.getElementById("StudentCounseling").style.background = "#FAFAFA";
+        document.getElementById("StudentCounseling").style.border = "1px solid #E5E5E5";
+    }
+}
+    
+var CalenderClicked = 0; 
+function ClickCalender(){
+    // hide student counseling page 
+    document.getElementById("studentCounselingAndDevelopment").style.display = "none";
+    document.getElementById("StudentCounseling").style.background = "#FAFAFA";
+    document.getElementById("StudentCounseling").style.border = "1px solid #E5E5E5";
+    document.getElementById("StudentCounseling").style.color = "#5d5c5c";
+    StudentCounselingClicked = 0;
+
+    //hide Acadamic Information page
+    document.getElementById("AcademicinformationPage").style.display = "none";
+    document.getElementById("AcademicInformationTab").style.background = "#FAFAFA";
+    document.getElementById("AcademicInformationTab").style.border = "1px solid #E5E5E5";
+    document.getElementById("AcademicInformationTab").style.color = "#5d5c5c";
+    ClickAcademicInformationClicked = 0;
+
+    //hide Results page
+    document.getElementById("ResultsPage").style.display = "none";
+    document.getElementById("Results").style.background = "#FAFAFA";
+    document.getElementById("Results").style.border = "1px solid #E5E5E5";
+    document.getElementById("Results").style.color = "#5d5c5c";
+    resultsClicked = 0;
+
+    document.getElementById("CalenderPage").style.display = "block";
+    document.getElementById("Calender").style.background = "#ffff";
+    document.getElementById("Calender").style.border = "none";
+    document.getElementById("Calender").style.borderLeft = "5px solid #265b81";
+    document.getElementById("Calender").style.color = "#265b81";
+    CalenderClicked = 1;
+
+    //Setting the dates on the top row in the calender 
+    var dayNumber = new Date().getDay();
+    var startDate = new Date().getDate() - dayNumber+1;
+    var date = startDate;
+    document.getElementById("Monday").innerHTML  = "Monday" +"<label class='dateNumber'>"+ date + "</label>";
+    date += 1;
+    document.getElementById("Tuesday").innerHTML  = "Tuesday" +"<label class='dateNumber'>"+ date + "</label>";
+    date += 1;
+    document.getElementById("Wednesday").innerHTML  = "Wednesday" +"<label class='dateNumber'>"+ date + "</label>";
+    date += 1;
+    document.getElementById("thursday").innerHTML  = "Thursday" +"<label class='dateNumber'>"+ date + "</label>";
+    date += 1;
+    document.getElementById("Friday").innerHTML  = "Friday" +"<label class='dateNumber'>"+ date + "</label>";
+    date += 1;
+    document.getElementById("Saturday").innerHTML  = "Saturday" +"<label class='dateNumber'>"+ date + "</label>";
+    date += 1;
+    document.getElementById("Sunday").innerHTML  = "Sunday" +"<label class='dateNumber'>"+ date + "</label>";
+
+
+    // Higlight the day of the week on the schedule    
+    switch(new Date().getDay()) {
+        case 1:
+        console.log("monday");
+        document.getElementById("Monday").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule7").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule8").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule9").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule10").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule11").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule12").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule13").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule14").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule15").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule16").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule17").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule18").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule19").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule20").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule21").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule22").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule23").style.background = "#b0cee5";
+        document.getElementById("mondaySchedule00").style.background = "#b0cee5";
+        break;
+        case 2:
+            console.log("tuesday");
+            document.getElementById("Tuesday").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule7").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule8").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule9").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule10").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule11").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule12").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule13").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule14").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule15").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule16").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule17").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule18").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule19").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule20").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule21").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule22").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule23").style.background = "#b0cee5";
+            document.getElementById("tuesdaySchedule00").style.background = "#b0cee5";
+        break;
+        case 3:
+            console.log("Wednesday");
+            document.getElementById("Wednesday").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule7").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule8").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule9").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule10").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule11").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule12").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule13").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule14").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule15").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule16").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule17").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule18").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule19").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule20").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule21").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule22").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule23").style.background = "#b0cee5";
+            document.getElementById("WednesdaySchedule00").style.background = "#b0cee5";
+        break;
+        case 4:
+            console.log("Thursday");
+            document.getElementById("thursday").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule7").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule8").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule9").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule10").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule11").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule12").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule13").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule14").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule15").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule16").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule17").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule18").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule19").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule20").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule21").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule22").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule23").style.background = "#b0cee5";
+            document.getElementById("thursdaySchedule00").style.background = "#b0cee5";
+        break;
+        case 5:
+            console.log("Friday");
+            document.getElementById("Friday").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule7").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule8").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule9").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule10").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule11").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule12").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule13").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule14").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule15").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule16").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule17").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule18").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule19").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule20").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule21").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule22").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule23").style.background = "#b0cee5";
+            document.getElementById("FridaySchedule00").style.background = "#b0cee5";
+        break;
+        case 6:
+            console.log("Saturday");
+            document.getElementById("Saturday").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule7").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule8").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule9").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule10").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule11").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule12").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule13").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule14").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule15").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule16").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule17").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule18").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule19").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule20").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule21").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule22").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule23").style.background = "#b0cee5";
+            document.getElementById("SaturdaySchedule00").style.background = "#b0cee5";
+        break;
+        case 7:
+            console.log("Sunday");
+            document.getElementById("Sunday").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule7").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule8").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule9").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule10").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule11").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule12").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule13").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule14").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule15").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule16").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule17").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule18").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule19").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule20").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule21").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule22").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule23").style.background = "#b0cee5";
+            document.getElementById("SundaySchedule00").style.background = "#b0cee5";
+        break;
+        default:
+         console.log("Error in getting the dat");
+    }
+}
+function MouseOverCalender(){
+    if(CalenderClicked === 0)
+    {
+        document.getElementById("Calender").style.background = "#dddddd";
+        document.getElementById("Calender").style.border = "none";
+        document.getElementById("Calender").style.borderLeft = "5px solid #3b3a3a";
+    }
+}
+function MouseLeaveCalender(){
+    if(CalenderClicked === 0)
+    {
+        document.getElementById("Calender").style.background = "#FAFAFA";
+        document.getElementById("Calender").style.border = "1px solid #E5E5E5";
+    }
+}
+
+function ViewClicked(){
+    document.getElementById("AddEvent").style.border = "1px solid #E5E5E5";
+    document.getElementById("AddEvent").style.background = "#ffffff";
+    document.getElementById("AddEvent").style.color = "#6f327a";
+    document.getElementById("AddEvent").style.lineHeight = "32px";
+    document.getElementById("MergeCalenders").style.border = "1px solid #E5E5E5";
+    document.getElementById("MergeCalenders").style.background = "#ffffff";
+    document.getElementById("MergeCalenders").style.color = "#6f327a";
+    document.getElementById("MergeCalenders").style.lineHeight = "32px";
+    document.getElementById("Publish").style.border = "1px solid #E5E5E5";
+    document.getElementById("Publish").style.background = "#ffffff";
+    document.getElementById("Publish").style.color = "#6f327a";
+    document.getElementById("Publish").style.lineHeight = "32px";
+    document.getElementById("Fields").style.border = "1px solid #E5E5E5";
+    document.getElementById("Fields").style.background = "#ffffff";
+    document.getElementById("Fields").style.color = "#6f327a";
+    document.getElementById("Fields").style.lineHeight = "32px";
+    
+    
+    document.getElementById("view").style.borderBottom = "none";
+    document.getElementById("view").style.borderTop = "4px solid #265b81";
+    document.getElementById("view").style.background = "#ffffff";
+    document.getElementById("view").style.color = "#265b81";
+    document.getElementById("view").style.lineHeight = "18px";
+}
+function AddEventClicked(){
+    document.getElementById("view").style.border = "1px solid #E5E5E5";
+    document.getElementById("view").style.background = "#ffffff";
+    document.getElementById("view").style.color = "#6f327a";
+    document.getElementById("view").style.lineHeight = "32px";
+    document.getElementById("MergeCalenders").style.border = "1px solid #E5E5E5";
+    document.getElementById("MergeCalenders").style.background = "#ffffff";
+    document.getElementById("MergeCalenders").style.color = "#6f327a";
+    document.getElementById("MergeCalenders").style.lineHeight = "32px";
+    document.getElementById("Publish").style.border = "1px solid #E5E5E5";
+    document.getElementById("Publish").style.background = "#ffffff";
+    document.getElementById("Publish").style.color = "#6f327a";
+    document.getElementById("Publish").style.lineHeight = "32px";
+    document.getElementById("Fields").style.border = "1px solid #E5E5E5";
+    document.getElementById("Fields").style.background = "#ffffff";
+    document.getElementById("Fields").style.color = "#6f327a";
+    document.getElementById("Fields").style.lineHeight = "32px";
+
+    
+    document.getElementById("AddEvent").style.borderBottom = "none";
+    document.getElementById("AddEvent").style.borderTop = "4px solid #265b81";
+    document.getElementById("AddEvent").style.background = "#ffffff";
+    document.getElementById("AddEvent").style.color = "#265b81";
+    document.getElementById("AddEvent").style.lineHeight = "18px";
+}
+
+function MergeCalendersClicked(){
+    document.getElementById("view").style.border = "1px solid #E5E5E5";
+    document.getElementById("view").style.background = "#ffffff";
+    document.getElementById("view").style.color = "#6f327a";
+    document.getElementById("view").style.lineHeight = "32px";
+    document.getElementById("AddEvent").style.border = "1px solid #E5E5E5";
+    document.getElementById("AddEvent").style.background = "#ffffff";
+    document.getElementById("AddEvent").style.color = "#6f327a";
+    document.getElementById("AddEvent").style.lineHeight = "32px";
+    document.getElementById("Publish").style.border = "1px solid #E5E5E5";
+    document.getElementById("Publish").style.background = "#ffffff";
+    document.getElementById("Publish").style.color = "#6f327a";
+    document.getElementById("Publish").style.lineHeight = "32px";
+    document.getElementById("Fields").style.border = "1px solid #E5E5E5";
+    document.getElementById("Fields").style.background = "#ffffff";
+    document.getElementById("Fields").style.color = "#6f327a";
+    document.getElementById("Fields").style.lineHeight = "32px";
+    
+    document.getElementById("MergeCalenders").style.borderBottom = "none";
+    document.getElementById("MergeCalenders").style.borderTop = "4px solid #265b81";
+    document.getElementById("MergeCalenders").style.background = "#ffffff";
+    document.getElementById("MergeCalenders").style.color = "#265b81";
+    document.getElementById("MergeCalenders").style.lineHeight = "18px";
+}
+
+function PublishClicked(){
+    document.getElementById("view").style.border = "1px solid #E5E5E5";
+    document.getElementById("view").style.background = "#ffffff";
+    document.getElementById("view").style.color = "#6f327a";
+    document.getElementById("view").style.lineHeight = "32px";
+    document.getElementById("AddEvent").style.border = "1px solid #E5E5E5";
+    document.getElementById("AddEvent").style.background = "#ffffff";
+    document.getElementById("AddEvent").style.color = "#6f327a";
+    document.getElementById("AddEvent").style.lineHeight = "32px";
+    document.getElementById("MergeCalenders").style.border = "1px solid #E5E5E5";
+    document.getElementById("MergeCalenders").style.background = "#ffffff";
+    document.getElementById("MergeCalenders").style.color = "#6f327a";
+    document.getElementById("MergeCalenders").style.lineHeight = "32px";
+    document.getElementById("Fields").style.border = "1px solid #E5E5E5";
+    document.getElementById("Fields").style.background = "#ffffff";
+    document.getElementById("Fields").style.color = "#6f327a";
+    document.getElementById("Fields").style.lineHeight = "32px";
+
+    
+    document.getElementById("Publish").style.borderBottom = "none";
+    document.getElementById("Publish").style.borderTop = "4px solid #265b81";
+    document.getElementById("Publish").style.background = "#ffffff";
+    document.getElementById("Publish").style.color = "#265b81";
+    document.getElementById("Publish").style.lineHeight = "18px";
+
+}
+
+function FieldsClicked(){
+    document.getElementById("view").style.border = "1px solid #E5E5E5";
+    document.getElementById("view").style.background = "#ffffff";
+    document.getElementById("view").style.color = "#6f327a";
+    document.getElementById("view").style.lineHeight = "32px";
+    document.getElementById("AddEvent").style.border = "1px solid #E5E5E5";
+    document.getElementById("AddEvent").style.background = "#ffffff";
+    document.getElementById("AddEvent").style.color = "#6f327a";
+    document.getElementById("AddEvent").style.lineHeight = "32px";
+    document.getElementById("MergeCalenders").style.border = "1px solid #E5E5E5";
+    document.getElementById("MergeCalenders").style.background = "#ffffff";
+    document.getElementById("MergeCalenders").style.color = "#6f327a";
+    document.getElementById("MergeCalenders").style.lineHeight = "32px";
+    document.getElementById("Publish").style.border = "1px solid #E5E5E5";
+    document.getElementById("Publish").style.background = "#ffffff";
+    document.getElementById("Publish").style.color = "#6f327a";
+    document.getElementById("Publish").style.lineHeight = "32px";
+    
+    document.getElementById("Fields").style.borderBottom = "none";
+    document.getElementById("Fields").style.borderTop = "4px solid #265b81";
+    document.getElementById("Fields").style.background = "#ffffff";
+    document.getElementById("Fields").style.color = "#265b81";
+    document.getElementById("Fields").style.lineHeight = "18px";
+}
+
+function CalenderBy(){
+    var select = document.getElementById('ViewOfCalender');
+    var value = select.options[select.selectedIndex].value;
+    console.log(value);
+    document.getElementById("CalenderbyLabel").textContent = "Calender by " + value;
+}
+
+var resultsClicked = 0;
+function ClickResults(){
+    // hide student counseling page 
+    document.getElementById("studentCounselingAndDevelopment").style.display = "none";
+    document.getElementById("StudentCounseling").style.background = "#FAFAFA";
+    document.getElementById("StudentCounseling").style.border = "1px solid #E5E5E5";
+    document.getElementById("StudentCounseling").style.color = "#5d5c5c";
+    StudentCounselingClicked = 0;
+
+    //hide Acadamic Information page
+    document.getElementById("AcademicinformationPage").style.display = "none";
+    document.getElementById("AcademicInformationTab").style.background = "#FAFAFA";
+    document.getElementById("AcademicInformationTab").style.border = "1px solid #E5E5E5";
+    document.getElementById("AcademicInformationTab").style.color = "#5d5c5c";
+    ClickAcademicInformationClicked = 0;
+
+    //hide calender page
+    document.getElementById("CalenderPage").style.display = "none";
+    document.getElementById("Calender").style.background = "#FAFAFA";
+    document.getElementById("Calender").style.border = "1px solid #E5E5E5";
+    document.getElementById("Calender").style.color = "#5d5c5c";
+    CalenderClicked = 0;
+
+
+    document.getElementById("ResultsPage").style.display = "block";
+    document.getElementById("Results").style.background = "#ffff";
+    document.getElementById("Results").style.border = "none";
+    document.getElementById("Results").style.borderLeft = "5px solid #265b81";
+    document.getElementById("Results").style.color = "#265b81";
+    resultsClicked = 1;
+}
+function MouseOverResults(){
+    if(resultsClicked === 0)
+    {
+        document.getElementById("Results").style.background = "#dddddd";
+        document.getElementById("Results").style.border = "none";
+        document.getElementById("Results").style.borderLeft = "5px solid #3b3a3a";
+    }
+}
+function MouseLeaveResults(){
+    if(resultsClicked === 0)
+    {
+        document.getElementById("Results").style.background = "#FAFAFA";
+        document.getElementById("Results").style.border = "1px solid #E5E5E5";
+    }
+}
+
+var thirdYearResultsDisplay = 0;
+function OpenThirdYearResults(){
+    if(thirdYearResultsDisplay === 1)
+    {
+        document.getElementById("ResultsTableThirdYear").style.display = "none";
+        document.getElementById("DownloadThirdYearResults").style.display = "none";
+        document.getElementById("ThirdYear").innerHTML = "2DXH013 N302V BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY" + "<i class='fa fa-level-down'></i>";
+
+        thirdYearResultsDisplay = 0;
+    }
+    else
+    {
+        document.getElementById("ResultsTableThirdYear").style.display = "block";
+        document.getElementById("DownloadThirdYearResults").style.display = "block";
+        document.getElementById("ThirdYear").innerHTML = "2DXH013 N302V BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY" + "<i class='fa fa-level-up'></i>";
+
+        thirdYearResultsDisplay =1;
+    }
+}
+
+var secondYearResultsDisplay = 0;
+function OpenSecondYearResults(){
+    if(secondYearResultsDisplay === 1)
+    {
+        document.getElementById("ResultsTableSecondYear").style.display = "none";
+        document.getElementById("DownloadSecondYearResults").style.display = "none";
+        document.getElementById("SecondYear").innerHTML = "2DXH012 N302V BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY" + "<i class='fa fa-level-down'></i>";
+        secondYearResultsDisplay = 0;
+    }
+    else
+    {
+        document.getElementById("ResultsTableSecondYear").style.display = "block";
+        document.getElementById("DownloadSecondYearResults").style.display = "block";
+        document.getElementById("SecondYear").innerHTML = "2DXH012 N302V BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY" + "<i class='fa fa-level-up'></i>";
+        secondYearResultsDisplay =1;
+    }
+}
+
+var firstYearResultsDisplay = 0;
+function OpenFirstYearResults(){
+    if(firstYearResultsDisplay === 1)
+    {
+        document.getElementById("ResultsTableFirstYear").style.display = "none";
+        document.getElementById("DownloadFirstYearResults").style.display = "none";
+        document.getElementById("FirstYear").innerHTML = "2DXH011 N302V BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY" + "<i class='fa fa-level-down'></i>";
+        firstYearResultsDisplay = 0;
+    }
+    else
+    {
+        document.getElementById("ResultsTableFirstYear").style.display = "block";
+        document.getElementById("DownloadFirstYearResults").style.display = "block";
+        document.getElementById("FirstYear").innerHTML = "2DXH011 N302V BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY" + "<i class='fa fa-level-up'></i>";
+        firstYearResultsDisplay =1;
+    }
+}
+var ApplicationInfo = 0;
+function OpenApplicationInformation(){
+    if(ApplicationInfo === 1)
+    {
+        document.getElementById("ApplicationYear4").style.display = "none";
+        document.getElementById("ApplicationYear1").style.display = "none";
+        document.getElementById("AcademicInfoTabs").innerHTML = "Application Information" + "<i class='fa fa-level-down'></i>";
+        ApplicationInfo = 0;
+        document.getElementById("ApplicationInformationTableYear1").style.display = "none";
+        document.getElementById("DownloadFirstYearApplicationStatus").style.display = "none";
+        document.getElementById("ApplicationYear1").innerHTML = "<b>Application year:</b>" + "2019" + "<i class='fa fa-level-down'></i>";
+        ApplicationInfo2019 = 0;
+        document.getElementById("ApplicationInformationTableYear4").style.display = "none";
+        document.getElementById("DownloadFourthYearApplicationStatus").style.display = "none";
+        document.getElementById("ApplicationYear4").innerHTML = "<b>Application year:</b>" + "2022" + "<i class='fa fa-level-down'></i>";
+        ApplicationInfo2022 = 0;
+    }
+    else
+    {
+        document.getElementById("ApplicationYear4").style.display = "block";
+        document.getElementById("ApplicationYear1").style.display = "block";
+        document.getElementById("AcademicInfoTabs").innerHTML = "Application Information" + "<i class='fa fa-level-up'></i>";
+        ApplicationInfo =1;
+    }
+}
+var ApplicationInfo2022 = 0;
+function OpenApplicationYear2022(){
+    if(ApplicationInfo2022 === 1)
+    {
+        document.getElementById("ApplicationInformationTableYear4").style.display = "none";
+        document.getElementById("DownloadFourthYearApplicationStatus").style.display = "none";
+        document.getElementById("ApplicationYear4").innerHTML = "<b>Application year:</b>" + "2022" + "<i class='fa fa-level-down'></i>";
+        ApplicationInfo2022 = 0;
+    }
+    else
+    {
+        document.getElementById("ApplicationInformationTableYear4").style.display = "block";
+        document.getElementById("DownloadFourthYearApplicationStatus").style.display = "block";
+        document.getElementById("ApplicationYear4").innerHTML = "<b>Application year:</b>" + "2022" + "<i class='fa fa-level-up'></i>";
+        ApplicationInfo2022 =1;
+    }
+}
+var ApplicationInfo2019 = 0;
+function OpenApplicationYear2019(){
+    if(ApplicationInfo2019 === 1)
+    {
+        document.getElementById("ApplicationInformationTableYear1").style.display = "none";
+        document.getElementById("DownloadFirstYearApplicationStatus").style.display = "none";
+        document.getElementById("ApplicationYear1").innerHTML = "<b>Application year:</b>" + "2019" + "<i class='fa fa-level-down'></i>";
+        ApplicationInfo2019 = 0;
+    }
+    else
+    {
+        document.getElementById("ApplicationInformationTableYear1").style.display = "block";
+        document.getElementById("DownloadFirstYearApplicationStatus").style.display = "block";
+        document.getElementById("ApplicationYear1").innerHTML = "<b>Application year:</b>" + "2019" + "<i class='fa fa-level-up'></i>";
+        ApplicationInfo2019 =1;
+    }
+}
+
+var OpenRegistrationInformation = 0;
+function OpenRegistrationInformationInfo(){
+    if(OpenRegistrationInformation === 1)
+    {
+        document.getElementById("registrationYear2022").style.display = "none";
+        document.getElementById("registrationYear2021").style.display = "none";
+        document.getElementById("registrationYear2020").style.display = "none";
+        document.getElementById("registrationYear2019").style.display = "none";
+        //Hide tables
+        document.getElementById("RegistrationTable2022").style.display = "none";
+        document.getElementById("registrationYear2022").innerHTML = "<b>Registration year:</b>" + " 2022" + "<i class='fa fa-level-down'></i>";
+        OpenRegistration2022Info = 0;
+        document.getElementById("Download2022Registration").style.display = "none";
+        document.getElementById("RegistrationTable2021").style.display = "none";
+        document.getElementById("registrationYear2021").innerHTML = "<b>Registration year:</b>" + " 2021" + "<i class='fa fa-level-down'></i>";
+        OpenRegistration2021Info = 0;
+        document.getElementById("Download2021Registration").style.display = "none";
+        document.getElementById("RegistrationTable2020").style.display = "none";
+        document.getElementById("registrationYear2020").innerHTML = "<b>Registration year:</b>" + " 2020" + "<i class='fa fa-level-down'></i>";
+        OpenRegistration2020Info = 0;
+        document.getElementById("Download2020Registration").style.display = "none";
+        document.getElementById("RegistrationTable2019").style.display = "none";
+        document.getElementById("registrationYear2019").innerHTML = "<b>Registration year:</b>" + " 2019" + "<i class='fa fa-level-down'></i>";
+        OpenRegistration2019Info = 0;
+        document.getElementById("Download2019Registration").style.display = "none";
+        document.getElementById("RegistrationTabInfo").innerHTML = "Registration Information" + "<i class='fa fa-level-down'></i>";
+        OpenRegistrationInformation = 0;
+    }
+    else
+    {
+        document.getElementById("registrationYear2022").style.display = "block";
+        document.getElementById("registrationYear2021").style.display = "block";
+        document.getElementById("registrationYear2020").style.display = "block";
+        document.getElementById("registrationYear2019").style.display = "block";
+        document.getElementById("RegistrationTabInfo").innerHTML = "Registration Information" + "<i class='fa fa-level-up'></i>";
+        OpenRegistrationInformation =1;
+    }
+}
+
+var OpenRegistration2022Info = 0;
+function OpenRegistration2022(){
+    if(OpenRegistration2022Info === 1)
+    {
+        document.getElementById("RegistrationTable2022").style.display = "none";
+        document.getElementById("Download2022Registration").style.display = "none";
+        document.getElementById("registrationYear2022").innerHTML = "<b>Registration year:</b>" + " 2022" + "<i class='fa fa-level-down'></i>";
+        OpenRegistration2022Info = 0;
+    }
+    else
+    {
+        document.getElementById("RegistrationTable2022").style.display = "block";
+        document.getElementById("Download2022Registration").style.display = "block";
+        document.getElementById("registrationYear2022").innerHTML = "<b>Registration year:</b>" + " 2022" + "<i class='fa fa-level-up'></i>";
+        OpenRegistration2022Info =1;
+    }
+}
+
+var OpenRegistration2021Info = 0;
+function OpenRegistration2021(){
+    if(OpenRegistration2021Info === 1)
+    {
+        document.getElementById("RegistrationTable2021").style.display = "none";
+        document.getElementById("Download2021Registration").style.display = "none";
+        document.getElementById("registrationYear2021").innerHTML = "<b>Registration year:</b>" + " 2021" + "<i class='fa fa-level-down'></i>";
+        OpenRegistration2021Info = 0;
+    }
+    else
+    {
+        document.getElementById("RegistrationTable2021").style.display = "block";
+        document.getElementById("Download2021Registration").style.display = "block";
+        document.getElementById("registrationYear2021").innerHTML = "<b>Registration year:</b>" + " 2021" + "<i class='fa fa-level-up'></i>";
+        OpenRegistration2021Info =1;
+    }
+}
+
+
+var OpenRegistration2020Info = 0;
+function OpenRegistration2020(){
+    if(OpenRegistration2020Info === 1)
+    {
+        document.getElementById("RegistrationTable2020").style.display = "none";
+        document.getElementById("Download2020Registration").style.display = "none";
+        document.getElementById("registrationYear2020").innerHTML = "<b>Registration year:</b>" + " 2020" + "<i class='fa fa-level-down'></i>";
+        OpenRegistration2020Info = 0;
+    }
+    else
+    {
+        document.getElementById("RegistrationTable2020").style.display = "block";
+        document.getElementById("Download2020Registration").style.display = "block";
+        document.getElementById("registrationYear2020").innerHTML = "<b>Registration year:</b>" + " 2020" + "<i class='fa fa-level-up'></i>";
+        OpenRegistration2020Info =1;
+    }
+}
+
+var OpenRegistration2019Info = 0;
+function OpenRegistration2019(){
+    if(OpenRegistration2019Info === 1)
+    {
+        document.getElementById("RegistrationTable2019").style.display = "none";
+        document.getElementById("Download2019Registration").style.display = "none";
+        document.getElementById("registrationYear2019").innerHTML = "<b>Registration year:</b>" + " 2019" + "<i class='fa fa-level-down'></i>";
+        OpenRegistration2019Info = 0;
+    }
+    else
+    {
+        document.getElementById("RegistrationTable2019").style.display = "block";
+        document.getElementById("Download2019Registration").style.display = "block";
+        document.getElementById("registrationYear2019").innerHTML = "<b>Registration year:</b>" + " 2019" + "<i class='fa fa-level-up'></i>";
+        OpenRegistration2019Info =1;
+    }
+}
+
+var openTimetablesInfo = 0;
+function OpenTimetables(){
+    if(openTimetablesInfo === 1)
+    {
+        document.getElementById("TimetableClass").style.display = "none";
+        document.getElementById("TimetableExam").style.display = "none";
+        document.getElementById("TimetablesInfo").innerHTML = " Timetables" + "<i class='fa fa-level-down'></i>";
+        openTimetablesInfo = 0;
+
+        //Close timeTables
+        document.getElementById("TimetableClass").innerHTML = "<b>Class Timetable</b>" + "<i class='fa fa-level-down'></i>";
+        document.getElementById("ClassTimeTable").style.display = "none";
+        document.getElementById("DownloadClassTimetable").style.display = "none";
+        classTimetable = 0;
+        document.getElementById("ExamTimeTable").style.display = "none";
+        document.getElementById("TimetableExam").innerHTML = "<b>Exam Timetable</b>" + "<i class='fa fa-level-down'></i>";
+        document.getElementById("DownloadExamTimetable").style.display = "none";
+        examTimetable = 0;
+    }
+    else
+    {
+        document.getElementById("TimetableClass").style.display = "block";
+        document.getElementById("TimetableExam").style.display = "block";
+        document.getElementById("TimetablesInfo").innerHTML = "Timetables" + "<i class='fa fa-level-up'></i>";
+        openTimetablesInfo =1;
+    }
+}
+
+var classTimetable = 0;
+function TimetableClass(){
+    if(classTimetable === 1)
+    {
+        document.getElementById("ClassTimeTable").style.display = "none";
+        document.getElementById("DownloadClassTimetable").style.display = "none";
+        document.getElementById("TimetableClass").innerHTML = "<b>Class Timetable</b>" + "<i class='fa fa-level-down'></i>";
+        classTimetable = 0;
+    }
+    else
+    {
+        document.getElementById("ClassTimeTable").style.display = "block";
+        document.getElementById("DownloadClassTimetable").style.display = "block";
+        document.getElementById("TimetableClass").innerHTML = "<b>Class Timetable</b>" + "<i class='fa fa-level-up'></i>";
+        classTimetable =1;
+    }
+
+}
+
+var examTimetable = 0;
+function TimetableExam(){
+    if(examTimetable === 1)
+    {
+        document.getElementById("ExamTimeTable").style.display = "none";
+        document.getElementById("DownloadExamTimetable").style.display = "none";
+        document.getElementById("TimetableExam").innerHTML = "<b>Exam Timetable</b>" + "<i class='fa fa-level-down'></i>";
+        examTimetable = 0;
+    }
+    else
+    {
+        document.getElementById("ExamTimeTable").style.display = "block";
+        document.getElementById("DownloadExamTimetable").style.display = "block";
+        document.getElementById("TimetableExam").innerHTML = "<b>Exam Timetable</b>" + "<i class='fa fa-level-up'></i>";
+        examTimetable =1;
+    }
+}
+
+
+   
+    </script>
     <style>
         .infoAcademicInfoTabs{
     background: #fff;
